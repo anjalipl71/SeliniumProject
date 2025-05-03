@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">229,424</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCases.QALegendProjectsTest</td><td><a href="#m0">addNewProjectsEdit</a></td><td rowspan="1">1746270239496</td><td rowspan="1">1398</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.QALegendAddEventTest</td><td><a href="#m1">addEventUsingQuickAdd</a></td><td rowspan="1">1746270203923</td><td rowspan="1">17808</td></tr><tr class="passedodd"><td rowspan="4">TestCases.QALegendAddTicketsTest</td><td><a href="#m2">addNewTicket</a></td><td rowspan="1">1746270094642</td><td rowspan="1">26197</td></tr><tr class="passedodd"><td><a href="#m3">assigningTicket</a></td><td rowspan="1">1746270123488</td><td rowspan="1">24733</td></tr><tr class="passedodd"><td><a href="#m4">markasClosedTicket</a></td><td rowspan="1">1746270150532</td><td rowspan="1">23468</td></tr><tr class="passedodd"><td><a href="#m5">ticketsMessagePost</a></td><td rowspan="1">1746270176524</td><td rowspan="1">24231</td></tr><tr class="passedeven"><td rowspan="2">TestCases.QALegendProjectsTest</td><td><a href="#m6">addNewProjects</a></td><td rowspan="1">1746270225529</td><td rowspan="1">10090</td></tr><tr class="passedeven"><td><a href="#m7">projectStatusChangeandDelete</a></td><td rowspan="1">1746270244919</td><td rowspan="1">30268</td></tr><tr class="passedodd"><td rowspan="2">TestCases.QALegendUserMyProfileTest</td><td><a href="#m8">approveLeave</a></td><td rowspan="1">1746270304735</td><td rowspan="1">14651</td></tr><tr class="passedodd"><td><a href="#m9">userMyProfileOption</a></td><td rowspan="1">1746270278883</td><td rowspan="1">22938</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">TestCases.QALegendProjectsTest#addNewProjectsEdit</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=135.0.7049.116)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [175373750cc5323fa96366242bb3f6b7, clickElement {id=f.552A21E02FB4D0DC72F25644BDBD4801.d.3413BD6E6EC8FA18A9D0995BEDCDAA35.e.46}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60095/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (175373750cc5323fa96366242bb3f6b7)] -&gt; xpath: //span[text()=&apos;All Projects&apos;]]
+Session ID: 175373750cc5323fa96366242bb3f6b7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at Utilities.PageUtilities.clickonanelement(PageUtilities.java:11)
+	at PageClasses.QALegendHomePage.allProjectOptionClick(QALegendHomePage.java:47)
+	at TestCases.QALegendProjectsTest.addNewProjectsEdit(QALegendProjectsTest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestCases.QALegendAddEventTest#addEventUsingQuickAdd</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestCases.QALegendAddTicketsTest#addNewTicket</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestCases.QALegendAddTicketsTest#assigningTicket</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestCases.QALegendAddTicketsTest#markasClosedTicket</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestCases.QALegendAddTicketsTest#ticketsMessagePost</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TestCases.QALegendProjectsTest#addNewProjects</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestCases.QALegendProjectsTest#projectStatusChangeandDelete</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">TestCases.QALegendUserMyProfileTest#approveLeave</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">TestCases.QALegendUserMyProfileTest#userMyProfileOption</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

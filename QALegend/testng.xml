@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="browsername" value="chrome"/>
+    <classes>
+    
+     <!-- <class name="TestCases.QALegendAddMemberTest">
+      <methods>
+      <include name="addTeamMember"></include>
+      </methods>
+      </class>-->
+      
+    <class name="TestCases.QALegendAddTicketsTest">
+      <methods>
+      <include name="addNewTicket"></include>
+     <include name="assigningTicket"></include>
+      <include name="markasClosedTicket"></include>
+     <include name="ticketsMessagePost"></include>    
+      </methods>
+     </class>
+      
+     <class name="TestCases.QALegendAddEventTest">
+      <methods>
+      <include name="addEventUsingQuickAdd"></include>
+      </methods>
+      </class>
+      
+     <class name="TestCases.QALegendProjectsTest">
+      <methods>
+      <include name="addNewProjects"></include>
+      <include name="addNewProjectsEdit"></include>
+      <include name="projectStatusChangeandDelete"></include>
+      </methods>
+      </class>
+      
+    <class name="TestCases.QALegendUserMyProfileTest">
+      <methods>
+      <include name="userMyProfileOption"></include>
+      <include name="approveLeave"></include>
+      </methods>
+      </class>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
