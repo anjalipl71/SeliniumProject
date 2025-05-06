@@ -15,14 +15,14 @@
       </methods>
       </class>-->
       
-  <!-- <class name="TestCases.QALegendAddTicketsTest">
+   <class name="TestCases.QALegendAddTicketsTest">
       <methods>
       <include name="addNewTicket"></include>
       <include name="assigningTicket"></include>
       <include name="markasClosedTicket"></include>
     <include name="ticketsMessagePost"></include>  
      </methods>
-     </class>-->
+     </class>
       
      <!--<class name="TestCases.QALegendAddEventTest">
       <methods>
@@ -30,13 +30,13 @@
       </methods>
       </class>-->
       
-     <class name="TestCases.QALegendProjectsTest">
+    <!-- <class name="TestCases.QALegendProjectsTest">
       <methods>
       <include name="addNewProjects"></include>
-      <!--<include name="addNewProjectsEdit"></include>
-      <include name="projectStatusChangeandDelete"></include>-->
+      <include name="addNewProjectsEdit"></include>
+      <include name="projectStatusChangeandDelete"></include>
       </methods>
-      </class>
+      </class>-->
       
    <!-- <class name="TestCases.QALegendUserMyProfileTest">
       <methods>
