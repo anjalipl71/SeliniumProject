@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Hp\eclipse-workspace\QALegend\testng.xml</span>
+                    <span>C:\Users\Hp\git\SeliniumProject\QALegend\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -109,58 +109,18 @@
                     </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.QALegendAddEventTest" class="method navigator-link" hash-for-method="addEventUsingQuickAdd">addEventUsingQuickAdd</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.QALegendProjectsTest" class="method navigator-link" hash-for-method="addNewProjectsEdit">addNewProjectsEdit</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.QALegendProjectsTest" class="method navigator-link" hash-for-method="addNewProjects">addNewProjects</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.QALegendAddTicketsTest" class="method navigator-link" hash-for-method="addNewTicket">addNewTicket</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.QALegendUserMyProfileTest" class="method navigator-link" hash-for-method="approveLeave">approveLeave</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.QALegendAddTicketsTest" class="method navigator-link" hash-for-method="assigningTicket">assigningTicket</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.QALegendAddTicketsTest" class="method navigator-link" hash-for-method="markasClosedTicket">markasClosedTicket</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.QALegendProjectsTest" class="method navigator-link" hash-for-method="projectStatusChangeandDelete">projectStatusChangeandDelete</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.QALegendAddTicketsTest" class="method navigator-link" hash-for-method="ticketsMessagePost">ticketsMessagePost</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.QALegendUserMyProfileTest" class="method navigator-link" hash-for-method="userMyProfileOption">userMyProfileOption</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -183,15 +143,16 @@
                   <a name="addNewProjectsEdit">
                   </a> <!-- addNewProjectsEdit -->
                   <span class="method-name">addNewProjectsEdit</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=135.0.7049.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [175373750cc5323fa96366242bb3f6b7, clickElement {id=f.552A21E02FB4D0DC72F25644BDBD4801.d.3413BD6E6EC8FA18A9D0995BEDCDAA35.e.46}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60095/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (175373750cc5323fa96366242bb3f6b7)] -&gt; xpath: //span[text()=&apos;All Projects&apos;]]
-Session ID: 175373750cc5323fa96366242bb3f6b7
+Command: [e470ef51211098b6ce1495c134013547, clickElement {id=f.128FE9F7CF6F240343C5B3FEE878E9F8.d.52643D05765C14420F4324B13F2B6FCD.e.161}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61786/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e470ef51211098b6ce1495c134013547)] -&gt; xpath: //a[@title=&apos;Edit project&apos;]]
+Session ID: e470ef51211098b6ce1495c134013547
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -204,8 +165,8 @@ Session ID: 175373750cc5323fa96366242bb3f6b7
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
 	at Utilities.PageUtilities.clickonanelement(PageUtilities.java:11)
-	at PageClasses.QALegendHomePage.allProjectOptionClick(QALegendHomePage.java:47)
-	at TestCases.QALegendProjectsTest.addNewProjectsEdit(QALegendProjectsTest.java:64)
+	at PageClasses.QALegendAddProjectPage.clickOnEditButton(QALegendAddProjectPage.java:83)
+	at TestCases.QALegendProjectsTest.addNewProjectsEdit(QALegendProjectsTest.java:78)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 30 stack frames
 </div> <!-- stack-trace -->
@@ -213,140 +174,66 @@ Session ID: 175373750cc5323fa96366242bb3f6b7
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">TestCases.QALegendProjectsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addNewProjects">
-                  </a> <!-- addNewProjects -->
-                  <span class="method-name">addNewProjects</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="projectStatusChangeandDelete">
-                  </a> <!-- projectStatusChangeandDelete -->
-                  <span class="method-name">projectStatusChangeandDelete</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.QALegendAddTicketsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addNewTicket">
-                  </a> <!-- addNewTicket -->
-                  <span class="method-name">addNewTicket</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="assigningTicket">
-                  </a> <!-- assigningTicket -->
-                  <span class="method-name">assigningTicket</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="markasClosedTicket">
-                  </a> <!-- markasClosedTicket -->
-                  <span class="method-name">markasClosedTicket</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ticketsMessagePost">
-                  </a> <!-- ticketsMessagePost -->
-                  <span class="method-name">ticketsMessagePost</span>
+                  <a name="addNewProjectsEdit">
+                  </a> <!-- addNewProjectsEdit -->
+                  <span class="method-name">addNewProjectsEdit</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=135.0.7049.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ebc91448d6e6510f2bab4ca6cb577894, clickElement {id=f.84215F12F0F3E338F7F636CA63253324.d.4AC0322A9D7DAD40E5C70B6A800CA933.e.167}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61734}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61734/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ebc91448d6e6510f2bab4ca6cb577894)] -&gt; xpath: //a[@title=&apos;Edit project&apos;]]
+Session ID: ebc91448d6e6510f2bab4ca6cb577894
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at Utilities.PageUtilities.clickonanelement(PageUtilities.java:11)
+	at PageClasses.QALegendAddProjectPage.clickOnEditButton(QALegendAddProjectPage.java:83)
+	at TestCases.QALegendProjectsTest.addNewProjectsEdit(QALegendProjectsTest.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.QALegendUserMyProfileTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="approveLeave">
-                  </a> <!-- approveLeave -->
-                  <span class="method-name">approveLeave</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="userMyProfileOption">
-                  </a> <!-- userMyProfileOption -->
-                  <span class="method-name">userMyProfileOption</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.QALegendAddEventTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addEventUsingQuickAdd">
-                  </a> <!-- addEventUsingQuickAdd -->
-                  <span class="method-name">addEventUsingQuickAdd</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Hp\eclipse-workspace\QALegend\testng.xml</span>
+            <span class="header-content">C:\Users\Hp\git\SeliniumProject\QALegend\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browsername&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCases.QALegendAddTicketsTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;addNewTicket&quot;/&gt;
-          &lt;include name=&quot;assigningTicket&quot;/&gt;
-          &lt;include name=&quot;markasClosedTicket&quot;/&gt;
-          &lt;include name=&quot;ticketsMessagePost&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- TestCases.QALegendAddTicketsTest --&gt;
-      &lt;class name=&quot;TestCases.QALegendAddEventTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;addEventUsingQuickAdd&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- TestCases.QALegendAddEventTest --&gt;
       &lt;class name=&quot;TestCases.QALegendProjectsTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;addNewProjects&quot;/&gt;
           &lt;include name=&quot;addNewProjectsEdit&quot;/&gt;
-          &lt;include name=&quot;projectStatusChangeandDelete&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestCases.QALegendProjectsTest --&gt;
-      &lt;class name=&quot;TestCases.QALegendUserMyProfileTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;userMyProfileOption&quot;/&gt;
-          &lt;include name=&quot;approveLeave&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- TestCases.QALegendUserMyProfileTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -360,7 +247,7 @@ Session ID: 175373750cc5323fa96366242bb3f6b7
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -370,6 +257,14 @@ Session ID: 175373750cc5323fa96366242bb3f6b7
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addNewProjectsEdit</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -386,52 +281,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'projectStatusChangeandDelete')
+data.setCell(0, 1, 'addNewProjectsEdit')
 data.setCell(0, 2, 'TestCases.QALegendProjectsTest')
-data.setCell(0, 3, 30268);
+data.setCell(0, 3, 14298);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addNewTicket')
-data.setCell(1, 2, 'TestCases.QALegendAddTicketsTest')
-data.setCell(1, 3, 26197);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'assigningTicket')
-data.setCell(2, 2, 'TestCases.QALegendAddTicketsTest')
-data.setCell(2, 3, 24733);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'ticketsMessagePost')
-data.setCell(3, 2, 'TestCases.QALegendAddTicketsTest')
-data.setCell(3, 3, 24231);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'markasClosedTicket')
-data.setCell(4, 2, 'TestCases.QALegendAddTicketsTest')
-data.setCell(4, 3, 23468);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'userMyProfileOption')
-data.setCell(5, 2, 'TestCases.QALegendUserMyProfileTest')
-data.setCell(5, 3, 22938);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'addEventUsingQuickAdd')
-data.setCell(6, 2, 'TestCases.QALegendAddEventTest')
-data.setCell(6, 3, 17808);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'approveLeave')
-data.setCell(7, 2, 'TestCases.QALegendUserMyProfileTest')
-data.setCell(7, 3, 14651);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'addNewProjects')
-data.setCell(8, 2, 'TestCases.QALegendProjectsTest')
-data.setCell(8, 3, 10090);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'addNewProjectsEdit')
-data.setCell(9, 2, 'TestCases.QALegendProjectsTest')
-data.setCell(9, 3, 1398);
+data.setCell(1, 1, 'addNewProjectsEdit')
+data.setCell(1, 2, 'TestCases.QALegendProjectsTest')
+data.setCell(1, 3, 11484);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -446,9 +309,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.QALegendProjectsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">projectStatusChangeandDelete</span>
+                <br/>
+                <span class="ignored-method-name">addNewProjects</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -457,97 +329,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.QALegendAddTicketsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestCases.QALegendProjectsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initiliazation(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addNewTicket</span>
-                <span class="method-start">4610 ms</span>
+                <span class="method-name">addNewProjectsEdit</span>
+                <span class="method-start">7974 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">initiliazation(chrome)</span>
-                <span class="method-start">30813 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">assigningTicket</span>
-                <span class="method-start">33456 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">initiliazation(chrome)</span>
-                <span class="method-start">58191 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">markasClosedTicket</span>
-                <span class="method-start">60500 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">initiliazation(chrome)</span>
-                <span class="method-start">83970 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">ticketsMessagePost</span>
-                <span class="method-start">86492 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.QALegendAddEventTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initiliazation(chrome)</span>
-                <span class="method-start">110730 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addEventUsingQuickAdd</span>
-                <span class="method-start">113891 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.QALegendProjectsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initiliazation(chrome)</span>
-                <span class="method-start">131703 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addNewProjects</span>
-                <span class="method-start">135497 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">initiliazation(chrome)</span>
-                <span class="method-start">145589 ms</span>
+                <span class="method-start">19476 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">addNewProjectsEdit</span>
-                <span class="method-start">149464 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">initiliazation(chrome)</span>
-                <span class="method-start">150887 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">projectStatusChangeandDelete</span>
-                <span class="method-start">154887 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.QALegendUserMyProfileTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initiliazation(chrome)</span>
-                <span class="method-start">185161 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">userMyProfileOption</span>
-                <span class="method-start">188851 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">initiliazation(chrome)</span>
-                <span class="method-start">211792 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">approveLeave</span>
-                <span class="method-start">214703 ms</span>
+                <span class="method-start">29690 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -16,6 +16,7 @@ import PageClasses.QALegendHomePage;
 import PageClasses.QALegendLoginPage;
 import PageClasses.QALegendMyProfilePage;
 import PageClasses.QALegendTeamMemberPage;
+import Utilities.RetryAnalyser;
 import Utilities.waitUtility;
 
 public class QALegendUserMyProfileTest extends BaseClass {
@@ -42,31 +43,31 @@ public class QALegendUserMyProfileTest extends BaseClass {
     propProfile.load(fisProfile);
 	}
 	
-    @Test
+    @Test(priority = 1,groups= {"sanity"},retryAnalyzer = RetryAnalyser.class)
 	public void userMyProfileOption() throws InterruptedException, IOException {
     	
 		loginpage.loginToQaLegentPage(propProfile.getProperty("username"), propProfile.getProperty("password")); 
 		waitUtility.waitForClickingonAnElement(driver, homePage.userMyProfileClick); // example
 		homePage.usermyProfileClick();
-		//homePage.usermyProfileClick();
+		waitUtility.waitForClickingonAnElement(driver, homePage.userMyProfileClick);
 		homePage.myProfileClick();
 		myProfilePage.clickOnLeaveOption();
-		Thread.sleep(1000);
+		waitUtility.waitForClickingonAnElement(driver, myProfilePage.userApplyLeave);
 		myProfilePage.clickOnApplyLeave();
-		Thread.sleep(2000);
+		waitUtility.waitForClickingonAnElement(driver, myProfilePage.leaveTypeField);
 		myProfilePage.createLeave(propProfile.getProperty("reason"));
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		Assert.assertEquals(myProfilePage.checkleaveapplied(), true);
     }
     
-    @Test
+    @Test(priority = 2,groups= {"regression"},retryAnalyzer = RetryAnalyser.class)
 	public void approveLeave() throws InterruptedException {
 		loginpage.loginToQaLegentPage(propProfile.getProperty("username"), propProfile.getProperty("password"));
 		homePage.usermyProfileClick();
-		Thread.sleep(1000);
+		waitUtility.waitForClickingonAnElement(driver, homePage.userMyProfileClick);
 		homePage.myProfileClick();
 		myProfilePage.clickOnLeaveOption();
-		Thread.sleep(1000);
+		waitUtility.waitForClickingonAnElement(driver, myProfilePage.userApplyLeave);
 		myProfilePage.approveAppliedLeave(propProfile.getProperty("searchvalue"));
 		Thread.sleep(5000);
 		Assert.assertEquals(myProfilePage.checkApprovedStatus(), true);

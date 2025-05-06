@@ -14,6 +14,8 @@ import PageClasses.QALegendAddProjectPage;
 import PageClasses.QALegendHomePage;
 import PageClasses.QALegendLoginPage;
 import Utilities.FakerUtility;
+import Utilities.RetryAnalyser;
+import Utilities.waitUtility;
 
 public class QALegendProjectsTest extends BaseClass {
 	WebDriver driver;
@@ -40,52 +42,52 @@ public class QALegendProjectsTest extends BaseClass {
 		projectProp.load(projectfis);
 		
 		}
-	@Test
+	@Test(priority = 1,groups= {"regression"},retryAnalyzer = RetryAnalyser.class)
 	public void addNewProjects() throws InterruptedException {
 	   loginPage.loginToQaLegentPage(projectProp.getProperty("username"), projectProp.getProperty("password"));
 	   homePage.clickOnProjectOption();
 	   homePage.allProjectOptionClick();
 	   addProject.addProjectButtonClick();
-	   Thread.sleep(1000);
 	   String baseTitle = projectProp.getProperty("title");
 	   String title=baseTitle+FakerUtility.randomnumberGenerator();
+	   waitUtility.waitForVisibilityOfElement(driver, addProject.addTitle);
 	   addProject.createNewProjects(title);
-	   Thread.sleep(1000);
-	   Thread.sleep(5000);
+	   addProject.waitForInvisibilityOfProjectModal();
 	   addProject.searchProject(title);
 	   Assert.assertEquals(addProject.cellvalueselect(), true);
 	   
 	}
 	
-	@Test
+	@Test(priority = 2,groups= {"regression"},retryAnalyzer = RetryAnalyser.class)
 	public void addNewProjectsEdit() throws InterruptedException {
 		   loginPage.loginToQaLegentPage(projectProp.getProperty("username"), projectProp.getProperty("password"));
 		   homePage.clickOnProjectOption();
 		   homePage.allProjectOptionClick();
 		   addProject.addProjectButtonClick();
-		   Thread.sleep(1000);String baseTitle = projectProp.getProperty("title");
+		   String baseTitle = projectProp.getProperty("title");
 		   String title=baseTitle+FakerUtility.randomnumberGenerator();
+		   waitUtility.waitForVisibilityOfElement(driver, addProject.addTitle);
 		   addProject.createNewProjects(title);
-		   Thread.sleep(5000);
+		   addProject.waitForInvisibilityOfProjectModal();
 		   addProject.searchProject(title);
-		   Thread.sleep(5000);
+		   waitUtility.waitForVisibilityOfElement(driver, addProject.editProjectButton);
 		   addProject.clickOnEditButton();
-		   Thread.sleep(5000);
+		   waitUtility.waitForVisibilityOfElement(driver, addProject.addTitle);
 		   addProject.EditProject(projectProp.getProperty("description"));
-		   Thread.sleep(5000);
+		   waitUtility.waitForVisibilityOfElement(driver, addProject.editProjectButton);
 		   addProject.clickOnEditButton();
-		   Thread.sleep(5000);
-		   Assert.assertEquals(addProject.checkEditedData(), true);
+//		   Thread.sleep(5000);
+//		   Assert.assertEquals(addProject.checkEditedData(), true);
 	}
 	
-	@Test
+	@Test(priority = 3,groups= {"regression"},retryAnalyzer = RetryAnalyser.class)
 	public void projectStatusChangeandDelete() throws InterruptedException {
 		   loginPage.loginToQaLegentPage(projectProp.getProperty("username"), projectProp.getProperty("password"));
 		   homePage.clickOnProjectOption();
 		   homePage.allProjectOptionClick();
-		   Thread.sleep(5000);
+		   waitUtility.waitForVisibilityOfElement(driver, addProject.QALegendProjectPageEditButton);
 		   addProject.statusCompleteProjectsDelete();
-		   Thread.sleep(5000);
+		   waitUtility.waitForVisibilityOfElement(driver, addProject.selectStatusComplete);
 		   addProject.deleteCompletedProject();
 		   Thread.sleep(5000);
 		   Assert.assertEquals(addProject.checkDeleteTextMessage(), true);

@@ -12,6 +12,7 @@ import AutomationCore.BaseClass;
 import PageClasses.QALegendAddEventPage;
 import PageClasses.QALegendLoginPage;
 import Utilities.FakerUtility;
+import Utilities.RetryAnalyser;
 
 public class QALegendAddEventTest extends BaseClass{
 	WebDriver driver;
@@ -37,7 +38,7 @@ public class QALegendAddEventTest extends BaseClass{
 		
 	}
 	
-	@Test
+	@Test(groups= {"regression"},retryAnalyzer = RetryAnalyser.class)
 	public void addEventUsingQuickAdd() throws InterruptedException {
 		loginPage.loginToQaLegentPage(prop.getProperty("username"), prop.getProperty("password"));
 		Thread.sleep(5000);

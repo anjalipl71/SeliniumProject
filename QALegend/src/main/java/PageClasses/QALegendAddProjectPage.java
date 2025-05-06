@@ -6,21 +6,22 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.PageUtilities;
+import Utilities.waitUtility;
 
 public class QALegendAddProjectPage {
 	WebDriver driver;
 	@FindBy(xpath = "//a[@title='Add project']")
 	WebElement addProjectButton;
 	@FindBy(xpath = "//input[@name='title']")
-	WebElement addTitle;
+	public WebElement addTitle;
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement saveProjectsClick;
 	@FindBy(xpath = "//input[@type='search']")
 	WebElement searchBoxField;
 	@FindBy(xpath = "//a[@title='Edit project']")
-	WebElement editProjectButton;
+	public WebElement editProjectButton;
 	@FindBy(xpath = "//div[@class='select2-container select2 validate-hidden']")
-	WebElement selectClientValuedropdown;
+	public WebElement selectClientValuedropdown;
 	@FindBy(xpath = "//div[contains(@id,'select2-result-label') and normalize-space()='Amazon']")
 	WebElement selectClientValue;
 	@FindBy(id = "description")
@@ -28,7 +29,7 @@ public class QALegendAddProjectPage {
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement saveChanges;
 	@FindBy(xpath = "//a[@title='Edit project']")
-	WebElement selectEditProject;
+	public WebElement QALegendProjectPageEditButton;
 	@FindBy(xpath = "//div[@class='select2-container select2']")
 	WebElement editStatus;
 	@FindBy(xpath = "//div[contains(@id,'select2-result-label') and normalize-space()='Completed']")
@@ -38,7 +39,7 @@ public class QALegendAddProjectPage {
 	@FindBy(xpath = "//button[@data-toggle='dropdown']")
 	WebElement projectStatusChange;
 	@FindBy(xpath = "//li[@data-value='completed']")
-	WebElement selectStatusComplete;
+	public WebElement selectStatusComplete;
 	@FindBy(xpath = "//a[@title='Delete project'][1]")
 	WebElement selectDeleteButton;
 	@FindBy(id = "confirmDeleteButton")
@@ -49,7 +50,8 @@ public class QALegendAddProjectPage {
 	WebElement checkDescriptionTextArea;
 	@FindBy(xpath = "//div[text()='The record has been deleted.']")
 	WebElement checkDeleteMessage;
-	
+	@FindBy(xpath = "//div[@class='modal-content']")
+	public WebElement addProjectModal;
 
 	
 
@@ -59,8 +61,9 @@ public class QALegendAddProjectPage {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public void addProjectButtonClick() {
+	public QALegendAddProjectPage addProjectButtonClick() {
 		PageUtilities.clickonanelement(addProjectButton);
+		return this;
 	}
 	
 	public void createNewProjects(String title) {
@@ -84,7 +87,8 @@ public class QALegendAddProjectPage {
 		PageUtilities.clickonanelement(selectClientValuedropdown);
 		PageUtilities.clickonanelement(selectClientValue);
 		PageUtilities.enterText(projectDescription, description);
-		PageUtilities.clickonanelement(saveChanges);	
+		PageUtilities.clickonanelement(saveChanges);
+		
 	}
 	
 	public boolean checkEditedData() {
@@ -92,7 +96,7 @@ public class QALegendAddProjectPage {
 	}
 	
 	public void statusCompleteProjectsDelete() throws InterruptedException {
-		PageUtilities.clickonanelement(selectEditProject);
+		PageUtilities.clickonanelement(QALegendProjectPageEditButton);
 		Thread.sleep(2000);
 		PageUtilities.clickonanelement(editStatus);
 		PageUtilities.clickonanelement(selectCompleteStatus);
@@ -113,5 +117,9 @@ public class QALegendAddProjectPage {
 	public boolean checkDeleteTextMessage() {
 		return checkDeleteMessage.isDisplayed();
 	}
+	
+	 public void waitForInvisibilityOfProjectModal() {
+		 waitUtility.waitForInvisibilityOfAnElement(driver, addProjectModal);
+	 }
 
 }

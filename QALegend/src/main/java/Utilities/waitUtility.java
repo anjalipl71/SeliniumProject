@@ -25,6 +25,27 @@ public class waitUtility {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constant.EXPLICITWAIT));
         wait.until(ExpectedConditions.elementToBeSelected(element));
     }
+    public static void waitForVisibilityOfElement(WebDriver driver, WebElement element) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constant.EXPLICITWAIT));
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+    
+    public static void waitForElementToBeClickable(WebDriver driver, WebElement element) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constant.EXPLICITWAIT));
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+    
+    public static void waitForVisibilityAndClickability(WebDriver driver, WebElement element) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constant.EXPLICITWAIT));
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+    
+    public static void waitForInvisibilityOfAnElement(WebDriver driver, WebElement element) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constant.EXPLICITWAIT));
+        wait.until(ExpectedConditions.invisibilityOf(element));
+        
+    } 
+
 	}
 
 

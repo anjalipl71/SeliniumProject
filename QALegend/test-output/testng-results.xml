@@ -1,107 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+<testng-results retried="1" ignored="2" total="4" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-03T16:31:29 IST" name="Suite" finished-at="2025-05-03T16:35:19 IST" duration-ms="229424">
+  <suite started-at="2025-05-06T20:51:44 IST" name="Suite" finished-at="2025-05-06T20:52:28 IST" duration-ms="44055">
     <groups>
+      <group name="regression">
+        <method signature="QALegendProjectsTest.addNewProjectsEdit()[pri:2, instance:TestCases.QALegendProjectsTest@41a2befb]" name="addNewProjectsEdit" class="TestCases.QALegendProjectsTest"/>
+      </group> <!-- regression -->
     </groups>
-    <test started-at="2025-05-03T16:31:29 IST" name="Test" finished-at="2025-05-03T16:35:19 IST" duration-ms="229424">
-      <class name="TestCases.QALegendAddTicketsTest">
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@7dc0f706]" started-at="2025-05-03T16:31:30 IST" name="initiliazation" finished-at="2025-05-03T16:31:34 IST" duration-ms="4609" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiliazation -->
-        <test-method signature="addNewTicket()[pri:0, instance:TestCases.QALegendAddTicketsTest@7dc0f706]" started-at="2025-05-03T16:31:34 IST" name="addNewTicket" finished-at="2025-05-03T16:32:00 IST" duration-ms="26197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewTicket -->
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@7dc0f706]" started-at="2025-05-03T16:32:00 IST" name="initiliazation" finished-at="2025-05-03T16:32:03 IST" duration-ms="2643" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiliazation -->
-        <test-method signature="assigningTicket()[pri:0, instance:TestCases.QALegendAddTicketsTest@7dc0f706]" started-at="2025-05-03T16:32:03 IST" name="assigningTicket" finished-at="2025-05-03T16:32:28 IST" duration-ms="24733" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assigningTicket -->
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@7dc0f706]" started-at="2025-05-03T16:32:28 IST" name="initiliazation" finished-at="2025-05-03T16:32:30 IST" duration-ms="2309" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiliazation -->
-        <test-method signature="markasClosedTicket()[pri:0, instance:TestCases.QALegendAddTicketsTest@7dc0f706]" started-at="2025-05-03T16:32:30 IST" name="markasClosedTicket" finished-at="2025-05-03T16:32:54 IST" duration-ms="23468" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- markasClosedTicket -->
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@7dc0f706]" started-at="2025-05-03T16:32:54 IST" name="initiliazation" finished-at="2025-05-03T16:32:56 IST" duration-ms="2521" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiliazation -->
-        <test-method signature="ticketsMessagePost()[pri:0, instance:TestCases.QALegendAddTicketsTest@7dc0f706]" started-at="2025-05-03T16:32:56 IST" name="ticketsMessagePost" finished-at="2025-05-03T16:33:20 IST" duration-ms="24231" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ticketsMessagePost -->
-      </class> <!-- TestCases.QALegendAddTicketsTest -->
-      <class name="TestCases.QALegendUserMyProfileTest">
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendUserMyProfileTest@6f45df59]" started-at="2025-05-03T16:34:35 IST" name="initiliazation" finished-at="2025-05-03T16:34:38 IST" duration-ms="3689" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiliazation -->
-        <test-method signature="userMyProfileOption()[pri:0, instance:TestCases.QALegendUserMyProfileTest@6f45df59]" started-at="2025-05-03T16:34:38 IST" name="userMyProfileOption" finished-at="2025-05-03T16:35:01 IST" duration-ms="22938" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userMyProfileOption -->
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendUserMyProfileTest@6f45df59]" started-at="2025-05-03T16:35:01 IST" name="initiliazation" finished-at="2025-05-03T16:35:04 IST" duration-ms="2910" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiliazation -->
-        <test-method signature="approveLeave()[pri:0, instance:TestCases.QALegendUserMyProfileTest@6f45df59]" started-at="2025-05-03T16:35:04 IST" name="approveLeave" finished-at="2025-05-03T16:35:19 IST" duration-ms="14651" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- approveLeave -->
-      </class> <!-- TestCases.QALegendUserMyProfileTest -->
+    <test started-at="2025-05-06T20:51:44 IST" name="Test" finished-at="2025-05-06T20:52:28 IST" duration-ms="44055">
       <class name="TestCases.QALegendProjectsTest">
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendProjectsTest@58ea606c]" started-at="2025-05-03T16:33:41 IST" name="initiliazation" finished-at="2025-05-03T16:33:45 IST" duration-ms="3794" status="PASS">
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendProjectsTest@41a2befb]" started-at="2025-05-06T20:51:44 IST" name="initiliazation" finished-at="2025-05-06T20:51:52 IST" duration-ms="7973" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,44 +21,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiliazation -->
-        <test-method signature="addNewProjects()[pri:0, instance:TestCases.QALegendProjectsTest@58ea606c]" started-at="2025-05-03T16:33:45 IST" name="addNewProjects" finished-at="2025-05-03T16:33:55 IST" duration-ms="10090" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewProjects -->
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendProjectsTest@58ea606c]" started-at="2025-05-03T16:33:55 IST" name="initiliazation" finished-at="2025-05-03T16:33:59 IST" duration-ms="3874" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiliazation -->
-        <test-method signature="addNewProjectsEdit()[pri:0, instance:TestCases.QALegendProjectsTest@58ea606c]" started-at="2025-05-03T16:33:59 IST" name="addNewProjectsEdit" finished-at="2025-05-03T16:34:00 IST" duration-ms="1398" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method retried="true" signature="addNewProjectsEdit()[pri:2, instance:TestCases.QALegendProjectsTest@41a2befb]" started-at="2025-05-06T20:51:52 IST" name="addNewProjectsEdit" finished-at="2025-05-06T20:52:04 IST" duration-ms="11484" status="SKIP">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[element not interactable
+              <![CDATA[stale element reference: stale element not found in the current frame
   (Session info: chrome=135.0.7049.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [175373750cc5323fa96366242bb3f6b7, clickElement {id=f.552A21E02FB4D0DC72F25644BDBD4801.d.3413BD6E6EC8FA18A9D0995BEDCDAA35.e.46}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60095/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (175373750cc5323fa96366242bb3f6b7)] -> xpath: //span[text()='All Projects']]
-Session ID: 175373750cc5323fa96366242bb3f6b7]]>
+Command: [ebc91448d6e6510f2bab4ca6cb577894, clickElement {id=f.84215F12F0F3E338F7F636CA63253324.d.4AC0322A9D7DAD40E5C70B6A800CA933.e.167}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61734}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61734/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ebc91448d6e6510f2bab4ca6cb577894)] -> xpath: //a[@title='Edit project']]
+Session ID: ebc91448d6e6510f2bab4ca6cb577894]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=135.0.7049.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [175373750cc5323fa96366242bb3f6b7, clickElement {id=f.552A21E02FB4D0DC72F25644BDBD4801.d.3413BD6E6EC8FA18A9D0995BEDCDAA35.e.46}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60095/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (175373750cc5323fa96366242bb3f6b7)] -> xpath: //span[text()='All Projects']]
-Session ID: 175373750cc5323fa96366242bb3f6b7
+Command: [ebc91448d6e6510f2bab4ca6cb577894, clickElement {id=f.84215F12F0F3E338F7F636CA63253324.d.4AC0322A9D7DAD40E5C70B6A800CA933.e.167}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61734}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61734/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ebc91448d6e6510f2bab4ca6cb577894)] -> xpath: //a[@title='Edit project']]
+Session ID: ebc91448d6e6510f2bab4ca6cb577894
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -167,8 +63,8 @@ at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
 at Utilities.PageUtilities.clickonanelement(PageUtilities.java:11)
-at PageClasses.QALegendHomePage.allProjectOptionClick(QALegendHomePage.java:47)
-at TestCases.QALegendProjectsTest.addNewProjectsEdit(QALegendProjectsTest.java:64)
+at PageClasses.QALegendAddProjectPage.clickOnEditButton(QALegendAddProjectPage.java:83)
+at TestCases.QALegendProjectsTest.addNewProjectsEdit(QALegendProjectsTest.java:78)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -197,11 +93,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewProjectsEdit -->
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendProjectsTest@58ea606c]" started-at="2025-05-03T16:34:00 IST" name="initiliazation" finished-at="2025-05-03T16:34:04 IST" duration-ms="4000" status="PASS">
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendProjectsTest@41a2befb]" started-at="2025-05-06T20:52:04 IST" name="initiliazation" finished-at="2025-05-06T20:52:14 IST" duration-ms="10213" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -212,28 +108,83 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiliazation -->
-        <test-method signature="projectStatusChangeandDelete()[pri:0, instance:TestCases.QALegendProjectsTest@58ea606c]" started-at="2025-05-03T16:34:04 IST" name="projectStatusChangeandDelete" finished-at="2025-05-03T16:34:35 IST" duration-ms="30268" status="PASS">
+        <test-method signature="addNewProjectsEdit()[pri:2, instance:TestCases.QALegendProjectsTest@41a2befb]" started-at="2025-05-06T20:52:14 IST" name="addNewProjectsEdit" finished-at="2025-05-06T20:52:28 IST" duration-ms="14298" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=135.0.7049.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e470ef51211098b6ce1495c134013547, clickElement {id=f.128FE9F7CF6F240343C5B3FEE878E9F8.d.52643D05765C14420F4324B13F2B6FCD.e.161}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61786/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e470ef51211098b6ce1495c134013547)] -> xpath: //a[@title='Edit project']]
+Session ID: e470ef51211098b6ce1495c134013547]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=135.0.7049.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e470ef51211098b6ce1495c134013547, clickElement {id=f.128FE9F7CF6F240343C5B3FEE878E9F8.d.52643D05765C14420F4324B13F2B6FCD.e.161}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61786/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e470ef51211098b6ce1495c134013547)] -> xpath: //a[@title='Edit project']]
+Session ID: e470ef51211098b6ce1495c134013547
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at Utilities.PageUtilities.clickonanelement(PageUtilities.java:11)
+at PageClasses.QALegendAddProjectPage.clickOnEditButton(QALegendAddProjectPage.java:83)
+at TestCases.QALegendProjectsTest.addNewProjectsEdit(QALegendProjectsTest.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- projectStatusChangeandDelete -->
+        </test-method> <!-- addNewProjectsEdit -->
       </class> <!-- TestCases.QALegendProjectsTest -->
-      <class name="TestCases.QALegendAddEventTest">
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddEventTest@5c90e579]" started-at="2025-05-03T16:33:20 IST" name="initiliazation" finished-at="2025-05-03T16:33:23 IST" duration-ms="3160" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiliazation -->
-        <test-method signature="addEventUsingQuickAdd()[pri:0, instance:TestCases.QALegendAddEventTest@5c90e579]" started-at="2025-05-03T16:33:23 IST" name="addEventUsingQuickAdd" finished-at="2025-05-03T16:33:41 IST" duration-ms="17808" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEventUsingQuickAdd -->
-      </class> <!-- TestCases.QALegendAddEventTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

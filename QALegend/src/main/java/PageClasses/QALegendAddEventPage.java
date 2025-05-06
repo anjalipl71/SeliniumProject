@@ -44,12 +44,13 @@ public class QALegendAddEventPage {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public void addEventUsingQuickAddButton() {
+	public QALegendAddEventPage addEventUsingQuickAddButton() {
 		PageUtilities.clickonanelement(openuickAdd);
 		PageUtilities.clickonanelement(addEventClick);
+		return this;
 	}
 	
-	public void newAddEvent(String title,String description,WebDriver driver) throws InterruptedException {
+	public QALegendAddEventPage newAddEvent(String title,String description,WebDriver driver) throws InterruptedException {
 		PageUtilities.enterText(addEventTitleField, title);
 		PageUtilities.enterText(addEventDescriptionField, description);
 		PageUtilities.clickonanelement(addEventStartDate);
@@ -63,12 +64,9 @@ public class QALegendAddEventPage {
 		PageUtilities.scrollToElement(driver, repeatCheckbox);
 		PageUtilities.clickonanelement(repeatCheckbox);
 		PageUtilities.clickonanelement(saveButtonClick);
-	}
-	
-//		public void scrollAndClickRepeatCheckbox(WebDriver driver) {
-//		    PageUtilities.scrollToElement(driver, repeatCheckbox);
-//		    repeatCheckbox.click();
-//		}
+		return this;
+	}	
+
 	
 	  public boolean confirmDeleteTextMessage() {
 			return confirmDeleteMessage.isDisplayed();

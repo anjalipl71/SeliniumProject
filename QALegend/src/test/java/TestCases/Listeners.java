@@ -1,61 +1,86 @@
 package TestCases;
 
+import java.io.ObjectInputFilter.Status;
+
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
+import Utilities.extentReportUtility;
+
 public class Listeners implements ITestListener{
+		ExtentTest test;
 
-	@Override
-	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
+		ExtentReports extent = extentReportUtility.createExtentReports();
+		ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
+
+		public void onTestStart(ITestResult result) {//calls when test methods starts
 		ITestListener.super.onTestStart(result);
-	}
+		test = extent.createTest(result.getMethod().getMethodName());
+		extentTest.set(test);
+		}
 
-	@Override
-	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
+		public void onTestSuccess(ITestResult result) {//called when test method passess
 		ITestListener.super.onTestSuccess(result);
-		System.out.println("TestCAse Pass");
-	}
+		extentTest.get().log(com.aventstack.extentreports.Status.PASS, "Test Passed");
+		}
 
-	@Override
-	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
+		public void onTestFailure(ITestResult result) {//called when test method fails
 		ITestListener.super.onTestFailure(result);
-		System.out.println("TestCAse Fail");
-	}
+		extentTest.get().log(com.aventstack.extentreports.Status.FAIL, "Test Failed");
+		extentTest.get().fail(result.getThrowable());
+		WebDriver driver = null;
+		String testMethodName = result.getMethod().getMethodName();
+		try {
+		driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver")
+		.get(result.getInstance());
+		} catch (IllegalArgumentException e) {
 
-	@Override
-	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
+		e.printStackTrace();
+		} catch (IllegalAccessException e) {
+
+		e.printStackTrace();
+		} catch (NoSuchFieldException e) {
+
+		e.printStackTrace();
+		} catch (SecurityException e) {
+
+		e.printStackTrace();
+		}
+
+		try {
+		driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver")
+		.get(result.getInstance());
+		} catch (Exception e) {
+		}
+		}
+
+		public void onTestSkipped(ITestResult result) {//called when test method is skipped
 		ITestListener.super.onTestSkipped(result);
-		System.out.println("TsstCAse Skipped");
-	}
+		extentTest.get().log(com.aventstack.extentreports.Status.SKIP, "Test Skipped");
+		String testMethodName = result.getMethod().getMethodName();
+		}
 
-	@Override
-	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		// TODO Auto-generated method stub
+		public void onTestFailedButWithinSuccessPercentage(ITestResult result) {//called when test method fails within success percentage
 		ITestListener.super.onTestFailedButWithinSuccessPercentage(result);
-	}
+		}
 
-	@Override
-	public void onTestFailedWithTimeout(ITestResult result) {
-		// TODO Auto-generated method stub
+		public void onTestFailedWithTimeOut(ITestResult result) {
 		ITestListener.super.onTestFailedWithTimeout(result);
-	}
+		}
 
-	@Override
-	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
+		public void onStart(ITestContext context) {//called before test method starts
 		ITestListener.super.onStart(context);
-	}
+		}
 
-	@Override
-	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
+		public void onFinish(ITestContext context) {//called after test method finishes
 		ITestListener.super.onFinish(context);
-	}
-	
+		extent.flush();//if flush is not called report wont be generated
+		}
+			
 
 }

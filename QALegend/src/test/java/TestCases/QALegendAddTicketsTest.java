@@ -14,6 +14,8 @@ import PageClasses.QALegendAddTicketPage;
 import PageClasses.QALegendHomePage;
 import PageClasses.QALegendLoginPage;
 import Utilities.FakerUtility;
+import Utilities.RetryAnalyser;
+import Utilities.waitUtility;
 
 public class QALegendAddTicketsTest extends BaseClass{
 	WebDriver driver;
@@ -23,7 +25,7 @@ public class QALegendAddTicketsTest extends BaseClass{
 	Properties tickectprop;
 	FileInputStream ticketfis;
 	
-	@BeforeMethod
+	@BeforeMethod()
 	@Parameters({"browsername"})
 	public void initiliazation(String browsername) throws Exception {
 	driver=browseInitialization("Chrome");	
@@ -39,71 +41,74 @@ public class QALegendAddTicketsTest extends BaseClass{
 	tickectprop.load(ticketfis);
 	}
 	
-	@Test
+	@Test(priority = 1,groups= {"regression"},retryAnalyzer = RetryAnalyser.class)
 	public void addNewTicket() throws InterruptedException {
 		loginPage.loginToQaLegentPage(tickectprop.getProperty("username"), tickectprop.getProperty("password"));
 		homePage.clickonTicketsMenu();
-		Thread.sleep(5000);
+		waitUtility.waitForClickingonAnElement(driver, addTicketspage.clickonNewTicketsButton);
 		addTicketspage.clickOnAddTickets();
-		Thread.sleep(5000);
 		String baseTitle = tickectprop.getProperty("title");
 		String title=baseTitle+FakerUtility.randomnumberGenerator();
+		waitUtility.waitForVisibilityOfElement(driver, addTicketspage.titleField);
 		addTicketspage.createNewTickets(title, tickectprop.getProperty("description"));
-		Thread.sleep(5000);
+		addTicketspage.waitForInvisibilityOfTicketModal();
 		addTicketspage.ticketsSearch(title);
+		waitUtility.waitForClickingonAnElement(driver, addTicketspage.ticketsDeletearrowicon);
+		addTicketspage.ticketsDeleting();//findMessageSentorNot
+		//waitUtility.waitForVisibilityOfElement(driver, addTicketspage.findMessageSentorNot);
 		Thread.sleep(5000);
-		addTicketspage.ticketsDeleting();
-		Thread.sleep(1000);
 		Assert.assertEquals(addTicketspage.confirmDeleteTextMessage(), true);
 	}
 	
 	
-	@Test
+	@Test(priority = 2,groups= {"regression"},retryAnalyzer = RetryAnalyser.class)
 	public void assigningTicket() throws InterruptedException {
 		loginPage.loginToQaLegentPage(tickectprop.getProperty("username"), tickectprop.getProperty("password"));
 		homePage.clickonTicketsMenu();
-		Thread.sleep(5000);
+		waitUtility.waitForClickingonAnElement(driver, addTicketspage.clickonNewTicketsButton);
 		addTicketspage.clickOnAddTickets();
-		Thread.sleep(5000);
 		String baseTitle = tickectprop.getProperty("title");
 		String title=baseTitle+FakerUtility.randomnumberGenerator();
+		waitUtility.waitForVisibilityOfElement(driver, addTicketspage.titleField);
 		addTicketspage.createNewTickets(title, tickectprop.getProperty("description"));
-		Thread.sleep(5000);
+		addTicketspage.waitForInvisibilityOfTicketModal();
 		addTicketspage.ticketsSearch(title);
 		addTicketspage.clickonsearchedTicketTitle();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
+		//waitUtility.waitForVisibilityOfElement(driver, addTicketspage.clickonsearchedTicket);
 		Assert.assertEquals(addTicketspage.assignefind(), true);
 	}
 	
-	@Test
+	@Test(priority = 3,groups= {"regression"},retryAnalyzer = RetryAnalyser.class)
 	public void markasClosedTicket() throws InterruptedException {
 		loginPage.loginToQaLegentPage(tickectprop.getProperty("username"), tickectprop.getProperty("password"));
 		homePage.clickonTicketsMenu();
-		Thread.sleep(5000);
+		waitUtility.waitForClickingonAnElement(driver, addTicketspage.clickonNewTicketsButton);
 		addTicketspage.clickOnAddTickets();
-		Thread.sleep(5000);
 		String baseTitle = tickectprop.getProperty("title");
 		String title=baseTitle+FakerUtility.randomnumberGenerator();
+		waitUtility.waitForVisibilityOfElement(driver, addTicketspage.titleField);
 		addTicketspage.createNewTickets(title, tickectprop.getProperty("description"));
-		Thread.sleep(5000);
+		addTicketspage.waitForInvisibilityOfTicketModal();
 		addTicketspage.ticketsSearch(title);
-		Thread.sleep(1000);
+		waitUtility.waitForClickingonAnElement(driver, addTicketspage.clickonsearchedTicket);
 		addTicketspage.ticketMarkedAsClosed();
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
+		waitUtility.waitForClickingonAnElement(driver, addTicketspage.clickonNewTicketsButton);
 		Assert.assertEquals(addTicketspage.checkClosedStatus(), true);
 	}
 	
-	@Test
+	@Test(priority = 4,groups= {"regression","sanity"},retryAnalyzer = RetryAnalyser.class)
 	public void ticketsMessagePost() throws InterruptedException {
 		loginPage.loginToQaLegentPage(tickectprop.getProperty("username"), tickectprop.getProperty("password"));
 		homePage.clickonTicketsMenu();
-		Thread.sleep(5000);
+		waitUtility.waitForClickingonAnElement(driver, addTicketspage.clickonNewTicketsButton);
 		addTicketspage.clickOnAddTickets();
-		Thread.sleep(5000);
 		String baseTitle = tickectprop.getProperty("title");
 		String title=baseTitle+FakerUtility.randomnumberGenerator();
+		waitUtility.waitForVisibilityOfElement(driver, addTicketspage.titleField);
 		addTicketspage.createNewTickets(title, tickectprop.getProperty("description"));
-		Thread.sleep(5000);
+		addTicketspage.waitForInvisibilityOfTicketModal();
 		addTicketspage.ticketsSearch(title);
 		addTicketspage.createMessageinTicket(tickectprop.getProperty("message"));
 		Thread.sleep(5000);

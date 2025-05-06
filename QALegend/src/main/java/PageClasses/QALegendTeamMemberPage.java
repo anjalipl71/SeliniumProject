@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.PageUtilities;
+import Utilities.waitUtility;
 
 public class QALegendTeamMemberPage {
 	WebDriver driver;
@@ -31,6 +32,8 @@ public class QALegendTeamMemberPage {
 	WebElement searchfield;
 	@FindBy(xpath = "//tr[@class='odd'or @class='even']")
 	WebElement teammembercellvalue;
+	@FindBy(xpath = "//div[@class='modal-content']")
+	WebElement addMemberModal;
 	
 	
 	public QALegendTeamMemberPage(WebDriver driver) {
@@ -63,6 +66,10 @@ public class QALegendTeamMemberPage {
 	public boolean cellvalueFinder() {
 		return(teammembercellvalue.isDisplayed());
 	}
+	
+	 public void waitForInvisibilityOfAddMemberModal() {
+		 waitUtility.waitForInvisibilityOfAnElement(driver, addMemberModal);
+	 }
 	
 
 //		

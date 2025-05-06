@@ -6,13 +6,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.PageUtilities;
+import Utilities.waitUtility;
 
 public class QALegendAddTicketPage {
 	WebDriver driver;
 	  @FindBy(xpath = "//a[@class='btn btn-default']")  //a[@title='Add ticket']")
-	  WebElement clickonNewTicketsButton;
+	  public WebElement clickonNewTicketsButton;
 	  @FindBy(xpath = "//input[@name='title']")
-	  WebElement titleField;
+	  public WebElement titleField;
 	  @FindBy(id="s2id_client_id")
 	  WebElement selectClientdropdownClick;
 	  @FindBy(xpath="//div[contains(@id,'select2-result-label') and normalize-space()='123']")
@@ -22,25 +23,25 @@ public class QALegendAddTicketPage {
 	  @FindBy(xpath="//button[@type='submit']")
 	  WebElement clickOnSaveButton;
 	  @FindBy(xpath = "//input[@type='search']")
-	  WebElement ticketsSearchField;
+	  public WebElement ticketsSearchField;
 	  @FindBy(xpath =("//button[@class='btn btn-default dropdown-toggle  mt0 mb0'][1]"))
-	  WebElement ticketsDeletearrowicon;
+	  public WebElement ticketsDeletearrowicon;
 	  @FindBy(xpath = "//a[@title='Delete'][1]")
 	  WebElement clickonDelete;
 	  @FindBy(xpath = "//button[@id='confirmDeleteButton']")
 	  WebElement confirmDeleteButton ;
 	  @FindBy(xpath = "(//tr[@role='row']//child::a)[1]")
-	  WebElement clickonsearchedTicket;
+	  public WebElement clickonsearchedTicket;
 	  @FindBy(xpath = "(//button[@type='button'])[3]") 
 	  WebElement clickOnActionButton;
 	  @FindBy(xpath = "(//li[@role='presentation']//child::a)[3]")
 	  WebElement chooseAssigntoMe;
 	  @FindBy(xpath = "//span[contains(text(), 'Assigned to:')]/following-sibling::a[contains(text(), 'Megha Rajeev')]")
-	  WebElement findAssigneduser;
+	  public WebElement findAssigneduser;
 	  @FindBy(xpath = "(//li[@role='presentation']//child::a)[2]")
 	  WebElement chooseMarkasClosed;
 	  @FindBy(xpath = "//span[text()='Closed']")
-	  WebElement checkStatusClosed;
+	  public WebElement checkStatusClosed;
 	  @FindBy(id = "description")
 	  WebElement enterMessagefield;
 	  @FindBy(xpath = "//div[text()='The record has been deleted.']")
@@ -48,7 +49,9 @@ public class QALegendAddTicketPage {
 	  @FindBy(xpath = "//button[@type='submit']")
 	  WebElement postcommentButtonClick;
 	  @FindBy(xpath = "//p[text()='Ok. Will update']")
-	  WebElement findMessageSentorNot;
+	  public WebElement findMessageSentorNot;
+	  @FindBy(xpath = "//div[@class='modal-content']")
+	  public WebElement addTicketModal;
 	  
 	  public QALegendAddTicketPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
@@ -69,8 +72,9 @@ public class QALegendAddTicketPage {
 	  }
 	  
 	  public void ticketsSearch(String searchValue) {
-		  PageUtilities.enterText(ticketsSearchField, searchValue);
+          PageUtilities.enterText(ticketsSearchField, searchValue);
 	  }
+
 	  
 	  public void ticketsDeleting() throws InterruptedException {
 		  PageUtilities.clickonanelement(ticketsDeletearrowicon);
@@ -112,5 +116,9 @@ public class QALegendAddTicketPage {
 	 
 	 public boolean checkMessageSentOrNot() {
 		 return findMessageSentorNot.isDisplayed();
+	 }
+	 
+	 public void waitForInvisibilityOfTicketModal() {
+		 waitUtility.waitForInvisibilityOfAnElement(driver, addTicketModal);
 	 }
 }

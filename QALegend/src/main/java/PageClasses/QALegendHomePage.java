@@ -10,7 +10,7 @@ import Utilities.PageUtilities;
 public class QALegendHomePage {
 	WebDriver driver;
 	@FindBy(xpath = "//span[text()='Tickets']")
-	WebElement QALegendHomePageTicketOption;
+	public WebElement QALegendHomePageTicketOption;
 	@FindBy(xpath = "//span[text()='Team members']")
 	WebElement QaLegendHomePageTeamMemberOptions;
 	@FindBy(xpath = "//a[@href='https://qalegend.com/crm/index.php/projects']")

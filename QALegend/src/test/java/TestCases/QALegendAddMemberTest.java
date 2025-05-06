@@ -15,6 +15,7 @@ import Constants.Constant;
 import PageClasses.QALegendTeamMemberPage;
 import Utilities.ExcelUtility;
 import Utilities.FakerUtility;
+import Utilities.RetryAnalyser;
 import PageClasses.QALegendAddTicketPage;
 import PageClasses.QALegendHomePage;
 import PageClasses.QALegendLoginPage;
@@ -47,24 +48,22 @@ public class QALegendAddMemberTest extends BaseClass{
 	
 	
 
-	@Test
+	@Test(priority = 1,groups= {"sanity","regression"},retryAnalyzer = RetryAnalyser.class)
 
 	public void addTeamMember() throws InterruptedException, IOException {
 		
 		loginpage.loginToQaLegentPage(prop.getProperty("username"), prop.getProperty("password")); 
 		homePage.clickonTeamMemberbutton();
 		teamMemberPage.addTeamMemberbuttonclick();
-		Thread.sleep(1000);
 		String firstName= ExcelUtility.readStringData(1, 0, "TeamMembers", Constant.EXCELFILEPATH)+FakerUtility.randomnumberGenerator();
 	    String lastName=ExcelUtility.readStringData(1, 1, "TeamMembers", Constant.EXCELFILEPATH)+FakerUtility.randomnumberGenerator();
 	    String teammemberrole = ExcelUtility.readStringData(1, 2, "TeamMembers", Constant.EXCELFILEPATH);
-	    String salary = ExcelUtility.readStringData(1, 3, "TeamMembers", Constant.EXCELFILEPATH);
-	    String emailid=ExcelUtility.readStringData(1, 4, "TeamMembers", Constant.EXCELFILEPATH);	    
+	    String salary = ExcelUtility.readIntegerData(1, 3, "TeamMembers", Constant.EXCELFILEPATH);
+	    String emailid=ExcelUtility.readStringData(1, 4, "TeamMembers", Constant.EXCELFILEPATH)+FakerUtility.randomnumberGenerator()+"@gmail.com";	    
 	    String teammemberpassword=ExcelUtility.readStringData(1, 5, "TeamMembers", Constant.EXCELFILEPATH);
 	    teamMemberPage.addnewteammember(firstName,lastName,teammemberrole,salary,emailid,teammemberpassword);
-	    Thread.sleep(10000);
+	    teamMemberPage.waitForInvisibilityOfAddMemberModal();
 		teamMemberPage.searchbuttonclick(emailid);
-		Thread.sleep(5000);
 		Assert.assertEquals(teamMemberPage.cellvalueFinder(), true);
 		
 		

@@ -10,26 +10,26 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtility {
 	public static XSSFWorkbook w;
-    public static XSSFSheet s;
-    public static FileInputStream f;
-    public static String readStringData(int i,int j,String sheetname,String path) throws IOException {
-f= new FileInputStream(System.getProperty("user.dir")+path);
-    w= new XSSFWorkbook(f);
-s= w.getSheet(sheetname);
-Row r=s.getRow(i);
-Cell c=r.getCell(j);
-return c.getStringCellValue();
-   }
+	public static XSSFSheet s;
+	public static FileInputStream f;
+	public static String readStringData(int i,int j,String sheetname,String path) throws IOException {
+		f= new FileInputStream(System.getProperty("user.dir")+path);
+		w= new XSSFWorkbook(f);
+		s= w.getSheet(sheetname);
+		Row r=s.getRow(i);
+		Cell c=r.getCell(j);
+		return c.getStringCellValue();
+	}
 
-public static String readIntegerData(int i,int j,String sheetname,String path) throws IOException {
-f= new FileInputStream(System.getProperty("user.dir")+path);
-w= new XSSFWorkbook(f);
-s= w.getSheet(sheetname);
-Row r=s.getRow(i);
-Cell c=r.getCell(j);
-int value=(int) c.getNumericCellValue();
-return String.valueOf(value);
+	public static String readIntegerData(int i,int j,String sheetname,String path) throws IOException {
+		f= new FileInputStream(System.getProperty("user.dir")+path);
+		w= new XSSFWorkbook(f);
+		s= w.getSheet(sheetname);
+		Row r=s.getRow(i);
+		Cell c=r.getCell(j);
+		int value=(int) c.getNumericCellValue();
+		return String.valueOf(value);
 
-     }
+	}
 
 }

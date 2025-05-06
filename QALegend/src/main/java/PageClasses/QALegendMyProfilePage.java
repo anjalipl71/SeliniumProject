@@ -14,9 +14,9 @@ public class QALegendMyProfilePage {
 	@FindBy(xpath = "//a[text()='Leave']")
 	WebElement Userleave;
 	@FindBy(xpath = "//a[@title='Apply leave']")
-	WebElement userApplyLeave;
+	public WebElement userApplyLeave;
 	@FindBy(xpath = "//span[@id='select2-chosen-3']") 
-	WebElement leaveTypeField;
+	public WebElement leaveTypeField;
 	@FindBy(xpath = "(//div[@class='select2-result-label'])[2]")
 	WebElement selectLeaveType;
 	@FindBy(id = "duration_hours")
@@ -47,6 +47,8 @@ public class QALegendMyProfilePage {
 	WebElement secondClickforSort;
 	@FindBy(xpath = "//div[@class='modal-body']//span[@class='label label-success' and text()='Approved']")
 	WebElement statusApprovalCheck;
+	@FindBy(xpath = "//div[@class='modal-content']")
+	  public WebElement addProjectModal;
 	
 	public QALegendMyProfilePage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
