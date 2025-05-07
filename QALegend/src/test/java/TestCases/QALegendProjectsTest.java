@@ -32,7 +32,6 @@ public class QALegendProjectsTest extends BaseClass {
 		driver=browseInitialization("Chrome");	
 		driver.get("https://qalegend.com/crm/index.php/signin");
 		driver.manage().window().maximize();
-		Thread.sleep(1000);
 		loginPage=new QALegendLoginPage(driver);
 		homePage=new QALegendHomePage(driver);
 		addProject= new QALegendAddProjectPage(driver);
@@ -74,10 +73,10 @@ public class QALegendProjectsTest extends BaseClass {
 		   addProject.clickOnEditButton();
 		   waitUtility.waitForVisibilityOfElement(driver, addProject.addTitle);
 		   addProject.EditProject(projectProp.getProperty("description"));
-		   waitUtility.waitForVisibilityOfElement(driver, addProject.editProjectButton);
+		   addProject.waitForInvisibilityOfProjectModal();
 		   addProject.clickOnEditButton();
-//		   Thread.sleep(5000);
-//		   Assert.assertEquals(addProject.checkEditedData(), true);
+		   waitUtility.waitForClickingonAnElement(driver, addProject.checkDescriptionTextArea);
+		   Assert.assertTrue(addProject.checkEditedData());
 	}
 	
 	@Test(priority = 3,groups= {"regression"},retryAnalyzer = RetryAnalyser.class)
@@ -87,10 +86,11 @@ public class QALegendProjectsTest extends BaseClass {
 		   homePage.allProjectOptionClick();
 		   waitUtility.waitForVisibilityOfElement(driver, addProject.QALegendProjectPageEditButton);
 		   addProject.statusCompleteProjectsDelete();
+		   //addProject.waitForInvisibilityOfProjectModal();
 		   waitUtility.waitForVisibilityOfElement(driver, addProject.selectStatusComplete);
 		   addProject.deleteCompletedProject();
-		   Thread.sleep(5000);
-		   Assert.assertEquals(addProject.checkDeleteTextMessage(), true);
+		   waitUtility.waitForClickingonAnElement(driver, addProject.checkDeleteMessage);
+		   Assert.assertTrue(addProject.checkDeleteTextMessage());
 		   
 	}
 

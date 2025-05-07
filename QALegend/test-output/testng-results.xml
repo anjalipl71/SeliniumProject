@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="6" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-06T21:10:02 IST" name="Suite" finished-at="2025-05-06T21:12:56 IST" duration-ms="173093">
+  <suite started-at="2025-05-07T20:55:43 IST" name="Suite" finished-at="2025-05-07T20:57:40 IST" duration-ms="117345">
     <groups>
       <group name="regression">
-        <method signature="QALegendAddTicketsTest.addNewTicket()[pri:1, instance:TestCases.QALegendAddTicketsTest@6c40365c]" name="addNewTicket" class="TestCases.QALegendAddTicketsTest"/>
-        <method signature="QALegendAddTicketsTest.assigningTicket()[pri:2, instance:TestCases.QALegendAddTicketsTest@6c40365c]" name="assigningTicket" class="TestCases.QALegendAddTicketsTest"/>
-        <method signature="QALegendAddTicketsTest.markasClosedTicket()[pri:3, instance:TestCases.QALegendAddTicketsTest@6c40365c]" name="markasClosedTicket" class="TestCases.QALegendAddTicketsTest"/>
-        <method signature="QALegendAddTicketsTest.ticketsMessagePost()[pri:4, instance:TestCases.QALegendAddTicketsTest@6c40365c]" name="ticketsMessagePost" class="TestCases.QALegendAddTicketsTest"/>
+        <method signature="QALegendAddMemberTest.addTeamMember()[pri:1, instance:TestCases.QALegendAddMemberTest@7eb01b12]" name="addTeamMember" class="TestCases.QALegendAddMemberTest"/>
+        <method signature="QALegendAddTicketsTest.addNewTicket()[pri:1, instance:TestCases.QALegendAddTicketsTest@5003041b]" name="addNewTicket" class="TestCases.QALegendAddTicketsTest"/>
+        <method signature="QALegendProjectsTest.addNewProjects()[pri:1, instance:TestCases.QALegendProjectsTest@724bade8]" name="addNewProjects" class="TestCases.QALegendProjectsTest"/>
+        <method signature="QALegendAddTicketsTest.assigningTicket()[pri:2, instance:TestCases.QALegendAddTicketsTest@5003041b]" name="assigningTicket" class="TestCases.QALegendAddTicketsTest"/>
+        <method signature="QALegendProjectsTest.addNewProjectsEdit()[pri:2, instance:TestCases.QALegendProjectsTest@724bade8]" name="addNewProjectsEdit" class="TestCases.QALegendProjectsTest"/>
+        <method signature="QALegendUserMyProfileTest.approveLeave()[pri:2, instance:TestCases.QALegendUserMyProfileTest@16fb356]" name="approveLeave" class="TestCases.QALegendUserMyProfileTest"/>
+        <method signature="QALegendAddTicketsTest.markasClosedTicket()[pri:3, instance:TestCases.QALegendAddTicketsTest@5003041b]" name="markasClosedTicket" class="TestCases.QALegendAddTicketsTest"/>
+        <method signature="QALegendProjectsTest.projectStatusChangeandDelete()[pri:3, instance:TestCases.QALegendProjectsTest@724bade8]" name="projectStatusChangeandDelete" class="TestCases.QALegendProjectsTest"/>
+        <method signature="QALegendAddTicketsTest.ticketsMessagePost()[pri:4, instance:TestCases.QALegendAddTicketsTest@5003041b]" name="ticketsMessagePost" class="TestCases.QALegendAddTicketsTest"/>
       </group> <!-- regression -->
       <group name="sanity">
-        <method signature="QALegendAddTicketsTest.ticketsMessagePost()[pri:4, instance:TestCases.QALegendAddTicketsTest@6c40365c]" name="ticketsMessagePost" class="TestCases.QALegendAddTicketsTest"/>
+        <method signature="QALegendAddMemberTest.addTeamMember()[pri:1, instance:TestCases.QALegendAddMemberTest@7eb01b12]" name="addTeamMember" class="TestCases.QALegendAddMemberTest"/>
+        <method signature="QALegendUserMyProfileTest.userMyProfileOption()[pri:1, instance:TestCases.QALegendUserMyProfileTest@16fb356]" name="userMyProfileOption" class="TestCases.QALegendUserMyProfileTest"/>
+        <method signature="QALegendAddTicketsTest.ticketsMessagePost()[pri:4, instance:TestCases.QALegendAddTicketsTest@5003041b]" name="ticketsMessagePost" class="TestCases.QALegendAddTicketsTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-05-06T21:10:02 IST" name="Test" finished-at="2025-05-06T21:12:56 IST" duration-ms="173093">
+    <test started-at="2025-05-07T20:55:43 IST" name="Test" finished-at="2025-05-07T20:57:40 IST" duration-ms="117345">
       <class name="TestCases.QALegendAddTicketsTest">
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@6c40365c]" started-at="2025-05-06T21:10:02 IST" name="initiliazation" finished-at="2025-05-06T21:10:11 IST" duration-ms="8135" status="PASS">
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@5003041b]" started-at="2025-05-07T20:55:56 IST" name="initiliazation" finished-at="2025-05-07T20:55:59 IST" duration-ms="2240" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,11 +34,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiliazation -->
-        <test-method signature="addNewTicket()[pri:1, instance:TestCases.QALegendAddTicketsTest@6c40365c]" started-at="2025-05-06T21:10:11 IST" name="addNewTicket" finished-at="2025-05-06T21:10:24 IST" duration-ms="13269" status="PASS">
+        <test-method signature="addNewTicket()[pri:1, instance:TestCases.QALegendAddTicketsTest@5003041b]" started-at="2025-05-07T20:55:59 IST" name="addNewTicket" finished-at="2025-05-07T20:56:08 IST" duration-ms="9550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewTicket -->
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@6c40365c]" started-at="2025-05-06T21:10:24 IST" name="initiliazation" finished-at="2025-05-06T21:10:26 IST" duration-ms="2168" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendAddTicketsTest@5003041b]" started-at="2025-05-07T20:56:08 IST" name="afterMethod" finished-at="2025-05-07T20:56:09 IST" duration-ms="305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addNewTicket status=SUCCESS method=QALegendAddTicketsTest.addNewTicket()[pri:1, instance:TestCases.QALegendAddTicketsTest@5003041b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@5003041b]" started-at="2025-05-07T20:56:09 IST" name="initiliazation" finished-at="2025-05-07T20:56:11 IST" duration-ms="2330" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,81 +60,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiliazation -->
-        <test-method retried="true" signature="assigningTicket()[pri:2, instance:TestCases.QALegendAddTicketsTest@6c40365c]" started-at="2025-05-06T21:10:26 IST" name="assigningTicket" finished-at="2025-05-06T21:10:35 IST" duration-ms="8542" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(), 'Assigned to:')]/following-sibling::a[contains(text(), 'Megha Rajeev')]"}
-  (Session info: chrome=135.0.7049.116)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [34fa0e333e9bb578bcff67de7e015d79, findElement {value=//span[contains(text(), 'Assigned to:')]/following-sibling::a[contains(text(), 'Megha Rajeev')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62636/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 34fa0e333e9bb578bcff67de7e015d79]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(), 'Assigned to:')]/following-sibling::a[contains(text(), 'Megha Rajeev')]"}
-  (Session info: chrome=135.0.7049.116)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [34fa0e333e9bb578bcff67de7e015d79, findElement {value=//span[contains(text(), 'Assigned to:')]/following-sibling::a[contains(text(), 'Megha Rajeev')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62636/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 34fa0e333e9bb578bcff67de7e015d79
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-at PageClasses.QALegendAddTicketPage.assignefind(QALegendAddTicketPage.java:97)
-at TestCases.QALegendAddTicketsTest.assigningTicket(QALegendAddTicketsTest.java:79)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="assigningTicket()[pri:2, instance:TestCases.QALegendAddTicketsTest@5003041b]" started-at="2025-05-07T20:56:11 IST" name="assigningTicket" finished-at="2025-05-07T20:56:18 IST" duration-ms="7437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assigningTicket -->
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@6c40365c]" started-at="2025-05-06T21:10:35 IST" name="initiliazation" finished-at="2025-05-06T21:10:49 IST" duration-ms="14509" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendAddTicketsTest@5003041b]" started-at="2025-05-07T20:56:18 IST" name="afterMethod" finished-at="2025-05-07T20:56:19 IST" duration-ms="262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=assigningTicket status=SUCCESS method=QALegendAddTicketsTest.assigningTicket()[pri:2, instance:TestCases.QALegendAddTicketsTest@5003041b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@5003041b]" started-at="2025-05-07T20:56:19 IST" name="initiliazation" finished-at="2025-05-07T20:56:21 IST" duration-ms="2114" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -127,168 +86,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiliazation -->
-        <test-method signature="assigningTicket()[pri:2, instance:TestCases.QALegendAddTicketsTest@6c40365c]" started-at="2025-05-06T21:10:49 IST" name="assigningTicket" finished-at="2025-05-06T21:10:58 IST" duration-ms="9026" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(), 'Assigned to:')]/following-sibling::a[contains(text(), 'Megha Rajeev')]"}
-  (Session info: chrome=135.0.7049.116)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9c9ad2a47be04cd8c6e46e0bcb336029, findElement {value=//span[contains(text(), 'Assigned to:')]/following-sibling::a[contains(text(), 'Megha Rajeev')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62658}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62658/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9c9ad2a47be04cd8c6e46e0bcb336029]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(), 'Assigned to:')]/following-sibling::a[contains(text(), 'Megha Rajeev')]"}
-  (Session info: chrome=135.0.7049.116)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9c9ad2a47be04cd8c6e46e0bcb336029, findElement {value=//span[contains(text(), 'Assigned to:')]/following-sibling::a[contains(text(), 'Megha Rajeev')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62658}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62658/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9c9ad2a47be04cd8c6e46e0bcb336029
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-at PageClasses.QALegendAddTicketPage.assignefind(QALegendAddTicketPage.java:97)
-at TestCases.QALegendAddTicketsTest.assigningTicket(QALegendAddTicketsTest.java:79)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assigningTicket -->
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@6c40365c]" started-at="2025-05-06T21:10:58 IST" name="initiliazation" finished-at="2025-05-06T21:11:02 IST" duration-ms="3740" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiliazation -->
-        <test-method retried="true" signature="markasClosedTicket()[pri:3, instance:TestCases.QALegendAddTicketsTest@6c40365c]" started-at="2025-05-06T21:11:02 IST" name="markasClosedTicket" finished-at="2025-05-06T21:11:51 IST" duration-ms="49142" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='btn btn-default']' (tried for 40 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='btn btn-default']' (tried for 40 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at Utilities.waitUtility.waitForClickingonAnElement(waitUtility.java:16)
-at TestCases.QALegendAddTicketsTest.markasClosedTicket(QALegendAddTicketsTest.java:97)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='btn btn-default']"}
-  (Session info: chrome=135.0.7049.116)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dc0130febd276afa49eaac3b24ac3119, findElement {value=//a[@class='btn btn-default'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62698}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62698/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dc0130febd276afa49eaac3b24ac3119
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="markasClosedTicket()[pri:3, instance:TestCases.QALegendAddTicketsTest@5003041b]" started-at="2025-05-07T20:56:21 IST" name="markasClosedTicket" finished-at="2025-05-07T20:56:28 IST" duration-ms="7658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- markasClosedTicket -->
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@6c40365c]" started-at="2025-05-06T21:11:51 IST" name="initiliazation" finished-at="2025-05-06T21:11:53 IST" duration-ms="2364" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendAddTicketsTest@5003041b]" started-at="2025-05-07T20:56:28 IST" name="afterMethod" finished-at="2025-05-07T20:56:29 IST" duration-ms="268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=markasClosedTicket status=SUCCESS method=QALegendAddTicketsTest.markasClosedTicket()[pri:3, instance:TestCases.QALegendAddTicketsTest@5003041b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@5003041b]" started-at="2025-05-07T20:56:29 IST" name="initiliazation" finished-at="2025-05-07T20:56:31 IST" duration-ms="2043" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -299,98 +112,184 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiliazation -->
-        <test-method signature="markasClosedTicket()[pri:3, instance:TestCases.QALegendAddTicketsTest@6c40365c]" started-at="2025-05-06T21:11:53 IST" name="markasClosedTicket" finished-at="2025-05-06T21:12:40 IST" duration-ms="47040" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='btn btn-default']' (tried for 40 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='btn btn-default']' (tried for 40 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at Utilities.waitUtility.waitForClickingonAnElement(waitUtility.java:16)
-at TestCases.QALegendAddTicketsTest.markasClosedTicket(QALegendAddTicketsTest.java:97)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='btn btn-default']"}
-  (Session info: chrome=135.0.7049.116)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [35d34043bed11dcfd1163a5340f2dfb9, findElement {value=//a[@class='btn btn-default'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62747}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62747/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 35d34043bed11dcfd1163a5340f2dfb9
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- markasClosedTicket -->
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@6c40365c]" started-at="2025-05-06T21:12:40 IST" name="initiliazation" finished-at="2025-05-06T21:12:43 IST" duration-ms="2146" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiliazation -->
-        <test-method signature="ticketsMessagePost()[pri:4, instance:TestCases.QALegendAddTicketsTest@6c40365c]" started-at="2025-05-06T21:12:43 IST" name="ticketsMessagePost" finished-at="2025-05-06T21:12:55 IST" duration-ms="12877" status="PASS">
+        <test-method signature="ticketsMessagePost()[pri:4, instance:TestCases.QALegendAddTicketsTest@5003041b]" started-at="2025-05-07T20:56:31 IST" name="ticketsMessagePost" finished-at="2025-05-07T20:56:41 IST" duration-ms="10360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ticketsMessagePost -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendAddTicketsTest@5003041b]" started-at="2025-05-07T20:56:41 IST" name="afterMethod" finished-at="2025-05-07T20:56:41 IST" duration-ms="295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ticketsMessagePost status=SUCCESS method=QALegendAddTicketsTest.ticketsMessagePost()[pri:4, instance:TestCases.QALegendAddTicketsTest@5003041b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- TestCases.QALegendAddTicketsTest -->
+      <class name="TestCases.QALegendUserMyProfileTest">
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendUserMyProfileTest@16fb356]" started-at="2025-05-07T20:57:16 IST" name="initiliazation" finished-at="2025-05-07T20:57:18 IST" duration-ms="2053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiliazation -->
+        <test-method signature="userMyProfileOption()[pri:1, instance:TestCases.QALegendUserMyProfileTest@16fb356]" started-at="2025-05-07T20:57:18 IST" name="userMyProfileOption" finished-at="2025-05-07T20:57:29 IST" duration-ms="10602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userMyProfileOption -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendUserMyProfileTest@16fb356]" started-at="2025-05-07T20:57:29 IST" name="afterMethod" finished-at="2025-05-07T20:57:29 IST" duration-ms="297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userMyProfileOption status=SUCCESS method=QALegendUserMyProfileTest.userMyProfileOption()[pri:1, instance:TestCases.QALegendUserMyProfileTest@16fb356] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendUserMyProfileTest@16fb356]" started-at="2025-05-07T20:57:29 IST" name="initiliazation" finished-at="2025-05-07T20:57:31 IST" duration-ms="2109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiliazation -->
+        <test-method signature="approveLeave()[pri:2, instance:TestCases.QALegendUserMyProfileTest@16fb356]" started-at="2025-05-07T20:57:31 IST" name="approveLeave" finished-at="2025-05-07T20:57:40 IST" duration-ms="8347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approveLeave -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendUserMyProfileTest@16fb356]" started-at="2025-05-07T20:57:40 IST" name="afterMethod" finished-at="2025-05-07T20:57:40 IST" duration-ms="295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=approveLeave status=SUCCESS method=QALegendUserMyProfileTest.approveLeave()[pri:2, instance:TestCases.QALegendUserMyProfileTest@16fb356] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TestCases.QALegendUserMyProfileTest -->
+      <class name="TestCases.QALegendAddMemberTest">
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddMemberTest@7eb01b12]" started-at="2025-05-07T20:55:43 IST" name="initiliazation" finished-at="2025-05-07T20:55:47 IST" duration-ms="3901" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiliazation -->
+        <test-method signature="addTeamMember()[pri:1, instance:TestCases.QALegendAddMemberTest@7eb01b12]" started-at="2025-05-07T20:55:47 IST" name="addTeamMember" finished-at="2025-05-07T20:55:56 IST" duration-ms="9481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTeamMember -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendAddMemberTest@7eb01b12]" started-at="2025-05-07T20:55:56 IST" name="afterMethod" finished-at="2025-05-07T20:55:56 IST" duration-ms="276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addTeamMember status=SUCCESS method=QALegendAddMemberTest.addTeamMember()[pri:1, instance:TestCases.QALegendAddMemberTest@7eb01b12] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TestCases.QALegendAddMemberTest -->
+      <class name="TestCases.QALegendProjectsTest">
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendProjectsTest@724bade8]" started-at="2025-05-07T20:56:41 IST" name="initiliazation" finished-at="2025-05-07T20:56:43 IST" duration-ms="2084" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiliazation -->
+        <test-method signature="addNewProjects()[pri:1, instance:TestCases.QALegendProjectsTest@724bade8]" started-at="2025-05-07T20:56:43 IST" name="addNewProjects" finished-at="2025-05-07T20:56:50 IST" duration-ms="6952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewProjects -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendProjectsTest@724bade8]" started-at="2025-05-07T20:56:50 IST" name="afterMethod" finished-at="2025-05-07T20:56:51 IST" duration-ms="283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addNewProjects status=SUCCESS method=QALegendProjectsTest.addNewProjects()[pri:1, instance:TestCases.QALegendProjectsTest@724bade8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendProjectsTest@724bade8]" started-at="2025-05-07T20:56:51 IST" name="initiliazation" finished-at="2025-05-07T20:56:53 IST" duration-ms="2188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiliazation -->
+        <test-method signature="addNewProjectsEdit()[pri:2, instance:TestCases.QALegendProjectsTest@724bade8]" started-at="2025-05-07T20:56:53 IST" name="addNewProjectsEdit" finished-at="2025-05-07T20:57:03 IST" duration-ms="9874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewProjectsEdit -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendProjectsTest@724bade8]" started-at="2025-05-07T20:57:03 IST" name="afterMethod" finished-at="2025-05-07T20:57:05 IST" duration-ms="1881" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addNewProjectsEdit status=SUCCESS method=QALegendProjectsTest.addNewProjectsEdit()[pri:2, instance:TestCases.QALegendProjectsTest@724bade8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendProjectsTest@724bade8]" started-at="2025-05-07T20:57:05 IST" name="initiliazation" finished-at="2025-05-07T20:57:07 IST" duration-ms="2138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiliazation -->
+        <test-method signature="projectStatusChangeandDelete()[pri:3, instance:TestCases.QALegendProjectsTest@724bade8]" started-at="2025-05-07T20:57:07 IST" name="projectStatusChangeandDelete" finished-at="2025-05-07T20:57:16 IST" duration-ms="9287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- projectStatusChangeandDelete -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendProjectsTest@724bade8]" started-at="2025-05-07T20:57:16 IST" name="afterMethod" finished-at="2025-05-07T20:57:16 IST" duration-ms="290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=projectStatusChangeandDelete status=SUCCESS method=QALegendProjectsTest.projectStatusChangeandDelete()[pri:3, instance:TestCases.QALegendProjectsTest@724bade8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TestCases.QALegendProjectsTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

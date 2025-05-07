@@ -4,13 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browsername" value="chrome"/>
     <classes>
-      <class name="TestCases.QALegendAddTicketsTest">
+      <class name="TestCases.QALegendProjectsTest">
         <methods>
           <include name="initiliazation"/>
-          <include name="markasClosedTicket"/>
-          <include name="assigningTicket"/>
+          <include name="afterMethod"/>
+          <include name="projectStatusChangeandDelete"/>
         </methods>
-      </class> <!-- TestCases.QALegendAddTicketsTest -->
+      </class> <!-- TestCases.QALegendProjectsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

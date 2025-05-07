@@ -47,10 +47,10 @@ public class QALegendAddProjectPage {
 	@FindBy(xpath = "//tr[@class='odd'or @class='even']")
 	WebElement projectcellvalue;
 	@FindBy(xpath = "//textarea[text()='Changing Client Value']")
-	WebElement checkDescriptionTextArea;
+	public WebElement checkDescriptionTextArea;
 	@FindBy(xpath = "//div[text()='The record has been deleted.']")
-	WebElement checkDeleteMessage;
-	@FindBy(xpath = "//div[@class='modal-content']")
+	public WebElement checkDeleteMessage;
+	@FindBy(xpath = "//div[@class='modal-content'][1]")
 	public WebElement addProjectModal;
 
 	
@@ -66,9 +66,10 @@ public class QALegendAddProjectPage {
 		return this;
 	}
 	
-	public void createNewProjects(String title) {
+	public QALegendAddProjectPage createNewProjects(String title) {
 		PageUtilities.enterText(addTitle, title);
 		PageUtilities.clickonanelement(saveProjectsClick);
+		return this;
 	}
 	
 	public void searchProject(String searchValue) {
@@ -95,22 +96,25 @@ public class QALegendAddProjectPage {
 		return checkDescriptionTextArea.isDisplayed();
 	}
 	
-	public void statusCompleteProjectsDelete() throws InterruptedException {
+	public QALegendAddProjectPage statusCompleteProjectsDelete() throws InterruptedException {
 		PageUtilities.clickonanelement(QALegendProjectPageEditButton);
-		Thread.sleep(2000);
+		waitUtility.waitForVisibilityOfElement(driver, editStatus);
 		PageUtilities.clickonanelement(editStatus);
 		PageUtilities.clickonanelement(selectCompleteStatus);
 		PageUtilities.clickonanelement(saveCompleteStatus);
-		Thread.sleep(2000);
+		waitUtility.waitForVisibilityOfElement(driver, projectStatusChange);
+		waitForInvisibilityOfProjectModal();
 		PageUtilities.clickonanelement(projectStatusChange);
-		Thread.sleep(2000);
+		return this;
+		
 	}
 	
 	public void deleteCompletedProject() throws InterruptedException {
 		PageUtilities.clickonanelement(selectStatusComplete);
-		Thread.sleep(3000);
+		waitUtility.waitForElementToBeClickable(driver, selectDeleteButton);
+		//Thread.sleep(5000);
 		PageUtilities.clickonanelement(selectDeleteButton);
-		Thread.sleep(3000);
+		waitUtility.waitForVisibilityOfElement(driver, confirmDeleteButton);
 		PageUtilities.clickonanelement(confirmDeleteButton);
 	}
 	

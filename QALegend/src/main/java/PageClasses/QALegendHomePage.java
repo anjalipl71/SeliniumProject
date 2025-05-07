@@ -31,28 +31,34 @@ public class QALegendHomePage {
 
 
 
-	public void clickonTeamMemberbutton() {
+	public QALegendHomePage clickonTeamMemberbutton() {
 		PageUtilities.clickonanelement(QaLegendHomePageTeamMemberOptions);
+		return this;
 	}
 	
-	public void clickonTicketsMenu() {
+	public QALegendHomePage clickonTicketsMenu() {
 		PageUtilities.clickonanelement(QALegendHomePageTicketOption);
+		return this;
 	}
 	
-	public void clickOnProjectOption() {
+	public QALegendHomePage clickOnProjectOption() {
 		PageUtilities.clickonanelement(clickOnProjects);
+		return this;
 	}
 	
-	public void allProjectOptionClick() {
+	public QALegendHomePage allProjectOptionClick() {
 		PageUtilities.clickonanelement(allProjectsclick);
+		return this;
 	}
 	
-	public void usermyProfileClick() {
+	public QALegendHomePage usermyProfileClick() {
 		PageUtilities.clickonanelement(userMyProfileClick);
+		return this;
 	}
 	
-	public void myProfileClick() {
+	public QALegendHomePage myProfileClick() {
 		PageUtilities.clickonanelement(clickonMyProfile);
+		return this;
 	}
 
 }

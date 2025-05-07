@@ -55,9 +55,8 @@ public class QALegendAddTicketsTest extends BaseClass{
 		addTicketspage.ticketsSearch(title);
 		waitUtility.waitForClickingonAnElement(driver, addTicketspage.ticketsDeletearrowicon);
 		addTicketspage.ticketsDeleting();//findMessageSentorNot
-		//waitUtility.waitForVisibilityOfElement(driver, addTicketspage.findMessageSentorNot);
-		Thread.sleep(5000);
-		Assert.assertEquals(addTicketspage.confirmDeleteTextMessage(), true);
+		waitUtility.waitForVisibilityOfElement(driver, addTicketspage.confirmDeleteMessage);
+		Assert.assertTrue(addTicketspage.confirmDeleteTextMessage());
 	}
 	
 	
@@ -74,9 +73,8 @@ public class QALegendAddTicketsTest extends BaseClass{
 		addTicketspage.waitForInvisibilityOfTicketModal();
 		addTicketspage.ticketsSearch(title);
 		addTicketspage.clickonsearchedTicketTitle();
-		//Thread.sleep(5000);
-		//waitUtility.waitForVisibilityOfElement(driver, addTicketspage.clickonsearchedTicket);
-		Assert.assertEquals(addTicketspage.assignefind(), true);
+		waitUtility.waitForVisibilityOfElement(driver, addTicketspage.findAssigneduser);
+		Assert.assertTrue(addTicketspage.assignefind());
 	}
 	
 	@Test(priority = 3,groups= {"regression"},retryAnalyzer = RetryAnalyser.class)
@@ -93,9 +91,8 @@ public class QALegendAddTicketsTest extends BaseClass{
 		addTicketspage.ticketsSearch(title);
 		waitUtility.waitForClickingonAnElement(driver, addTicketspage.clickonsearchedTicket);
 		addTicketspage.ticketMarkedAsClosed();
-		//Thread.sleep(2000);
-		waitUtility.waitForClickingonAnElement(driver, addTicketspage.clickonNewTicketsButton);
-		Assert.assertEquals(addTicketspage.checkClosedStatus(), true);
+		waitUtility.waitForClickingonAnElement(driver, addTicketspage.checkStatusClosed);
+		Assert.assertTrue(addTicketspage.checkClosedStatus());
 	}
 	
 	@Test(priority = 4,groups= {"regression","sanity"},retryAnalyzer = RetryAnalyser.class)
@@ -111,8 +108,8 @@ public class QALegendAddTicketsTest extends BaseClass{
 		addTicketspage.waitForInvisibilityOfTicketModal();
 		addTicketspage.ticketsSearch(title);
 		addTicketspage.createMessageinTicket(tickectprop.getProperty("message"));
-		Thread.sleep(5000);
-		Assert.assertEquals(addTicketspage.checkMessageSentOrNot(), true);
+		waitUtility.waitForClickingonAnElement(driver, addTicketspage.findMessageSentorNot);
+		Assert.assertTrue(addTicketspage.checkMessageSentOrNot());
 	}
 	
 

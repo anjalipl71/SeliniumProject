@@ -42,12 +42,13 @@ public class QALegendTeamMemberPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void addTeamMemberbuttonclick() {
+	public QALegendTeamMemberPage addTeamMemberbuttonclick() {
 		PageUtilities.clickonanelement(addTeamMemberButton);
+		return this;
 	}
 
 
-	public void addnewteammember(String firstname,String lastname,String jobtitle,String salary,String email,String password) {
+	public QALegendTeamMemberPage addnewteammember(String firstname,String lastname,String jobtitle,String salary,String email,String password) {
 		PageUtilities.enterText(firstnamefield, firstname);
 		PageUtilities.enterText(lastnamefield, lastname);
 		PageUtilities.clickonanelement(nextButton);
@@ -57,10 +58,12 @@ public class QALegendTeamMemberPage {
 		PageUtilities.enterText(emailField, email);
 		PageUtilities.enterText(passwordfield, password);
 		PageUtilities.clickonanelement(saveTeammemberButton);
+		return this;
 	}
 	
-	public void searchbuttonclick(String searchvalue) {
+	public QALegendTeamMemberPage searchbuttonclick(String searchvalue) {
 		PageUtilities.enterText(searchfield, searchvalue);
+		return this;
 	}
 	
 	public boolean cellvalueFinder() {

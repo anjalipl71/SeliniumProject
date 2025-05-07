@@ -45,7 +45,7 @@ public class QALegendAddTicketPage {
 	  @FindBy(id = "description")
 	  WebElement enterMessagefield;
 	  @FindBy(xpath = "//div[text()='The record has been deleted.']")
-	  WebElement confirmDeleteMessage;
+	  public WebElement confirmDeleteMessage;
 	  @FindBy(xpath = "//button[@type='submit']")
 	  WebElement postcommentButtonClick;
 	  @FindBy(xpath = "//p[text()='Ok. Will update']")
@@ -59,38 +59,43 @@ public class QALegendAddTicketPage {
 		  PageFactory.initElements(driver, this);
 	}
 
-	public void clickOnAddTickets() {
+	public QALegendAddTicketPage clickOnAddTickets() {
 		  PageUtilities.clickonanelement(clickonNewTicketsButton);
+		  return this;
 	  }
 	  
-	  public void createNewTickets(String title,String desciption) {
+	  public QALegendAddTicketPage createNewTickets(String title,String desciption) {
 		  PageUtilities.enterText(titleField, title);
 		  PageUtilities.clickonanelement(selectClientdropdownClick);
 		  PageUtilities.clickonanelement(clickOnClientValue);
 		  PageUtilities.enterText(descriptionField, desciption);
 		  PageUtilities.clickonanelement(clickOnSaveButton);
+		  return this;
 	  }
 	  
-	  public void ticketsSearch(String searchValue) {
+	  public QALegendAddTicketPage ticketsSearch(String searchValue) {
           PageUtilities.enterText(ticketsSearchField, searchValue);
+          return this;
 	  }
 
 	  
-	  public void ticketsDeleting() throws InterruptedException {
+	  public QALegendAddTicketPage ticketsDeleting() throws InterruptedException {
 		  PageUtilities.clickonanelement(ticketsDeletearrowicon);
 		  PageUtilities.clickonanelement(clickonDelete);
 		  Thread.sleep(1000);
 		  PageUtilities.clickonanelement(confirmDeleteButton);
+		  return this;
 	  }
 	  
 	  public boolean confirmDeleteTextMessage() {
 			return confirmDeleteMessage.isDisplayed();
 		}
 	  
-	  public void clickonsearchedTicketTitle() {
+	  public QALegendAddTicketPage clickonsearchedTicketTitle() {
 		  PageUtilities.clickonanelement(clickonsearchedTicket);
 		  PageUtilities.clickonanelement(clickOnActionButton);
 		  PageUtilities.clickonanelement(chooseAssigntoMe);
+		  return this;
 	  }
 	  
 	  public boolean assignefind() {
@@ -98,10 +103,11 @@ public class QALegendAddTicketPage {
 
 	  }
 	  
-	  public void ticketMarkedAsClosed() {
+	  public QALegendAddTicketPage ticketMarkedAsClosed() {
 		  PageUtilities.clickonanelement(clickonsearchedTicket);
 		  PageUtilities.clickonanelement(clickOnActionButton);
 		  PageUtilities.clickonanelement(chooseMarkasClosed);
+		  return this;
 	  }
 	
 	 public boolean checkClosedStatus() {

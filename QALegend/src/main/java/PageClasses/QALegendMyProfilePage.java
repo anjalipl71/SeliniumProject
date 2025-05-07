@@ -8,11 +8,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.PageUtilities;
+import Utilities.waitUtility;
 
 public class QALegendMyProfilePage {
 	WebDriver driver;
 	@FindBy(xpath = "//a[text()='Leave']")
-	WebElement Userleave;
+	public WebElement Userleave;
 	@FindBy(xpath = "//a[@title='Apply leave']")
 	public WebElement userApplyLeave;
 	@FindBy(xpath = "//span[@id='select2-chosen-3']") 
@@ -34,21 +35,21 @@ public class QALegendMyProfilePage {
 	@FindBy(xpath = "//a[@class='edit'][1]")
 	WebElement clickonEdit;
 	@FindBy(xpath = "//td[text()='Sick, I have an appointment with the doctor.']")
-	WebElement reasonTextFind;
+	public WebElement reasonTextFind;
 	@FindBy(xpath = "//input[@type='search']")
-	WebElement searchfield;
+	public WebElement searchfield;
 	@FindBy(xpath = "//a[@title='Application details'][1]")
 	WebElement clickOnEditButton;
 	@FindBy(xpath = "//button[@data-status='approved']")
 	WebElement clickOnApproveButton;
 	@FindBy(xpath = "//th[@class='w15p sorting']")
-	WebElement statusSortClick;
+	public WebElement statusSortClick;
 	@FindBy(xpath = "//th[@class='w15p sorting_asc']")
 	WebElement secondClickforSort;
 	@FindBy(xpath = "//div[@class='modal-body']//span[@class='label label-success' and text()='Approved']")
-	WebElement statusApprovalCheck;
-	@FindBy(xpath = "//div[@class='modal-content']")
-	  public WebElement addProjectModal;
+	public WebElement statusApprovalCheck;
+	@FindBy(xpath = "(//div[@class='modal-content'])[2]")
+	public WebElement addMyProfileModal;
 	
 	public QALegendMyProfilePage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
@@ -56,50 +57,59 @@ public class QALegendMyProfilePage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void clickOnLeaveOption() {
+	public QALegendMyProfilePage clickOnLeaveOption() {
 		PageUtilities.clickonanelement(Userleave);
+		return this;
 	}
-	public void clickOnApplyLeave() {
+	public QALegendMyProfilePage clickOnApplyLeave() {
 		PageUtilities.clickonanelement(userApplyLeave);
+		return this;
 	}
-	public void createLeave(String reasonforLeave) throws InterruptedException {
+	public QALegendMyProfilePage createLeave(String reasonforLeave) throws InterruptedException {
 		PageUtilities.clickonanelement(leaveTypeField);
 		PageUtilities.clickonanelement(selectLeaveType);
 		PageUtilities.clickonanelement(selectDuration);
-		Thread.sleep(1000);
 	    PageUtilities.clickonanelement(clickDateField);
 		PageUtilities.clickonanelement(selectTodayDate);
 		PageUtilities.enterText(leaveReasonField,reasonforLeave);
 		PageUtilities.clickonanelement(submitLeave);
+		return this;
 	}
 	
-	public boolean checkleaveapplied() throws InterruptedException {
-		PageUtilities.clickonanelement(Userleave);
-		Thread.sleep(1000);
+	
+	public QALegendMyProfilePage checkleaveapplied() throws InterruptedException {
+		waitUtility.waitForVisibilityOfElement(driver, statusSortClick);
 		PageUtilities.clickonanelement(statusSortClick);
-		Thread.sleep(2000);
+		waitUtility.waitForVisibilityOfElement(driver, secondClickforSort);
 		PageUtilities.clickonanelement(secondClickforSort);
-		Thread.sleep(5000);
+		waitUtility.waitForVisibilityOfElement(driver, clickonEdit);
 		PageUtilities.clickonanelement(clickonEdit);
-		Thread.sleep(1000);
-		return(reasonTextFind.isDisplayed());	
+		return this;
+		
 	}
 	
-	public void approveAppliedLeave(String searchStatus) throws InterruptedException {
+	public boolean checklreason() throws InterruptedException {
+			return(reasonTextFind.isDisplayed());
+	}
+	public QALegendMyProfilePage approveAppliedLeave(String searchStatus) throws InterruptedException {
 		PageUtilities.enterText(searchfield, searchStatus);
 		PageUtilities.clickonanelement(clickOnEditButton);
-		Thread.sleep(1000);
+		waitUtility.waitForVisibilityOfElement(driver, clickOnApproveButton);
 		PageUtilities.clickonanelement(clickOnApproveButton);
+		return this;
 	}
 	
 	public boolean checkApprovedStatus() throws InterruptedException {
-		PageUtilities.clickonanelement(Userleave);
-		Thread.sleep(1000);
+		waitUtility.waitForVisibilityOfElement(driver, statusSortClick);
 		PageUtilities.clickonanelement(statusSortClick);
-		Thread.sleep(1000);
+		waitUtility.waitForVisibilityOfElement(driver, clickOnEditButton);
 		PageUtilities.clickonanelement(clickOnEditButton);
-		Thread.sleep(1000);
+		waitUtility.waitForVisibilityOfElement(driver, statusApprovalCheck);
 		return(statusApprovalCheck.isDisplayed());
 	}
+	
+	public void waitForInvisibilityOfMyProfileModal() {
+		waitUtility.waitForInvisibilityOfAnElement(driver, addMyProfileModal);
+		}
 
 }

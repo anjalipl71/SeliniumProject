@@ -56,8 +56,12 @@ public class QALegendUserMyProfileTest extends BaseClass {
 		myProfilePage.clickOnApplyLeave();
 		waitUtility.waitForClickingonAnElement(driver, myProfilePage.leaveTypeField);
 		myProfilePage.createLeave(propProfile.getProperty("reason"));
-		Thread.sleep(10000);
-		Assert.assertEquals(myProfilePage.checkleaveapplied(), true);
+		myProfilePage.waitForInvisibilityOfMyProfileModal();
+		myProfilePage.clickOnLeaveOption();
+		waitUtility.waitForClickingonAnElement(driver, myProfilePage.statusSortClick);
+		myProfilePage.checkleaveapplied();
+		waitUtility.waitForClickingonAnElement(driver, myProfilePage.reasonTextFind);
+		Assert.assertTrue(myProfilePage.checklreason());
     }
     
     @Test(priority = 2,groups= {"regression"},retryAnalyzer = RetryAnalyser.class)
@@ -67,10 +71,12 @@ public class QALegendUserMyProfileTest extends BaseClass {
 		waitUtility.waitForClickingonAnElement(driver, homePage.userMyProfileClick);
 		homePage.myProfileClick();
 		myProfilePage.clickOnLeaveOption();
-		waitUtility.waitForClickingonAnElement(driver, myProfilePage.userApplyLeave);
+		waitUtility.waitForClickingonAnElement(driver, myProfilePage.searchfield);
 		myProfilePage.approveAppliedLeave(propProfile.getProperty("searchvalue"));
-		Thread.sleep(5000);
-		Assert.assertEquals(myProfilePage.checkApprovedStatus(), true);
+		myProfilePage.waitForInvisibilityOfMyProfileModal();
+		myProfilePage.clickOnLeaveOption();
+		waitUtility.waitForClickingonAnElement(driver, myProfilePage.statusSortClick);
+		Assert.assertTrue(myProfilePage.checkApprovedStatus());
 	}
 }
 
