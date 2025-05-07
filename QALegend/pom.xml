@@ -34,11 +34,11 @@
     <scope>test</scope>
 </dependency>
 
-  	<dependency>
+  	<!--<dependency>
   		<groupId>Automation</groupId>
   		<artifactId>Amazon</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+  	</dependency>-->
   	  	<dependency>
     <groupId>com.github.javafaker</groupId>
     <artifactId>javafaker</artifactId>

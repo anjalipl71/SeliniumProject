@@ -9,7 +9,7 @@
   <parameter name="browsername" value="chrome"/>
     <classes>
     
- <class name="TestCases.QALegendAddMemberTest">
+ <!--<class name="TestCases.QALegendAddMemberTest">
       <methods>
       <include name="addTeamMember"></include>
       </methods>
@@ -22,7 +22,7 @@
       <include name="markasClosedTicket"></include>
     <include name="ticketsMessagePost"></include> 
      </methods>
-     </class>
+     </class>-->
       
     <!-- <class name="TestCases.QALegendAddEventTest">
       <methods>
@@ -30,7 +30,7 @@
       </methods>
       </class>-->
       
-   <class name="TestCases.QALegendProjectsTest">
+  <class name="TestCases.QALegendProjectsTest">
       <methods>
      <include name="addNewProjects"></include>
      <include name="addNewProjectsEdit"></include>
