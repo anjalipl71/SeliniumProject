@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+<Listeners>
+<Listener class-name="TestCases.Listeners">
+</Listener>
+</Listeners>
+  <test thread-count="5" name="Test1">
+  <parameter name="browsername" value="chrome"/>
+    <classes>
+    
+ <!--<class name="TestCases.QALegendAddMemberTest">
+      <methods>
+      <include name="addTeamMember"></include>
+      </methods>
+      </class>
+      
+  <class name="TestCases.QALegendAddTicketsTest">
+      <methods>
+      <include name="addNewTicket"></include>
+     <include name="assigningTicket"></include>
+      <include name="markasClosedTicket"></include>
+    <include name="postticketsMessage"></include> 
+     </methods>
+     </class>-->
+      
+    <!-- <class name="TestCases.QALegendAddEventTest">
+      <methods>
+      <include name="addEventUsingQuickAdd"></include>
+      </methods>
+      </class>-->
+      
+ <!-- <class name="TestCases.QALegendProjectsTest">
+      <methods>
+     <include name="addNewProjects"></include>
+     <include name="editNewlyAddedProject"></include>
+     <include name="changeProjectStatusAndDeleteProject"></include>
+      </methods>
+      </class>-->
+      
+    <class name="TestCases.QALegendUserMyProfileTest">
+      <methods>
+      <include name="clickOnUserProfileAndApplyLeave"></include>
+    <include name="approveLeave"></include>
+      </methods>
+      </class>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Test2">
+  <parameter name="browsername" value="edge"/>
+    <classes>
+    
+ <!--<class name="TestCases.QALegendAddMemberTest">
+      <methods>
+      <include name="addTeamMember"></include>
+      </methods>
+      </class>
+      
+  <class name="TestCases.QALegendAddTicketsTest">
+      <methods>
+      <include name="addNewTicket"></include>
+     <include name="assigningTicket"></include>
+      <include name="markasClosedTicket"></include>
+    <include name="postticketsMessage"></include> 
+     </methods>
+     </class>-->
+      
+    <!-- <class name="TestCases.QALegendAddEventTest">
+      <methods>
+      <include name="addEventUsingQuickAdd"></include>
+      </methods>
+      </class>-->
+      
+ <!-- <class name="TestCases.QALegendProjectsTest">
+      <methods>
+     <include name="addNewProjects"></include>
+     <include name="editNewlyAddedProject"></include>
+     <include name="changeProjectStatusAndDeleteProject"></include>
+      </methods>
+      </class>-->
+      
+    <class name="TestCases.QALegendUserMyProfileTest">
+      <methods>
+      <include name="clickOnUserProfileAndApplyLeave"></include>
+    <include name="approveLeave"></include>
+      </methods>
+      </class>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test3">
+  <parameter name="browsername" value="firefox"/>
+    <classes>
+    
+ <!--<class name="TestCases.QALegendAddMemberTest">
+      <methods>
+      <include name="addTeamMember"></include>
+      </methods>
+      </class>
+      
+  <class name="TestCases.QALegendAddTicketsTest">
+      <methods>
+      <include name="addNewTicket"></include>
+     <include name="assigningTicket"></include>
+      <include name="markasClosedTicket"></include>
+    <include name="postticketsMessage"></include> 
+     </methods>
+     </class>-->
+      
+    <!-- <class name="TestCases.QALegendAddEventTest">
+      <methods>
+      <include name="addEventUsingQuickAdd"></include>
+      </methods>
+      </class>-->
+      
+ <!-- <class name="TestCases.QALegendProjectsTest">
+      <methods>
+     <include name="addNewProjects"></include>
+     <include name="editNewlyAddedProject"></include>
+     <include name="changeProjectStatusAndDeleteProject"></include>
+      </methods>
+      </class>-->
+      
+    <class name="TestCases.QALegendUserMyProfileTest">
+      <methods>
+      <include name="clickOnUserProfileAndApplyLeave"></include>
+    <include name="approveLeave"></include>
+      </methods>
+      </class>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
