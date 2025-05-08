@@ -9,7 +9,7 @@ import java.awt.event.KeyEvent;
 import org.openqa.selenium.WebElement;
 
 public class FileUtility {
-	public class FileUploadUtility{
+	public static class FileUploadUtility{
 		public static void fileUploadUsingRobertClass(WebElement element,String path) throws AWTException {
 		StringSelection ss = new StringSelection(path);
 
