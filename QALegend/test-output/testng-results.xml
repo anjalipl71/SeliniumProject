@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-07T21:26:53 IST" name="Suite" finished-at="2025-05-07T21:28:37 IST" duration-ms="104258">
+  <suite started-at="2025-05-08T13:52:25 IST" name="Suite" finished-at="2025-05-08T13:54:26 IST" duration-ms="120564">
     <groups>
       <group name="regression">
-        <method signature="QALegendProjectsTest.addNewProjects()[pri:1, instance:TestCases.QALegendProjectsTest@54d9d12d]" name="addNewProjects" class="TestCases.QALegendProjectsTest"/>
-        <method signature="QALegendProjectsTest.addNewProjectsEdit()[pri:2, instance:TestCases.QALegendProjectsTest@54d9d12d]" name="addNewProjectsEdit" class="TestCases.QALegendProjectsTest"/>
-        <method signature="QALegendUserMyProfileTest.approveLeave()[pri:2, instance:TestCases.QALegendUserMyProfileTest@3857f613]" name="approveLeave" class="TestCases.QALegendUserMyProfileTest"/>
-        <method signature="QALegendProjectsTest.projectStatusChangeandDelete()[pri:3, instance:TestCases.QALegendProjectsTest@54d9d12d]" name="projectStatusChangeandDelete" class="TestCases.QALegendProjectsTest"/>
+        <method signature="QALegendAddMemberTest.addTeamMember()[pri:1, instance:TestCases.QALegendAddMemberTest@815b41f]" name="addTeamMember" class="TestCases.QALegendAddMemberTest"/>
+        <method signature="QALegendAddTicketsTest.addNewTicket()[pri:1, instance:TestCases.QALegendAddTicketsTest@49438269]" name="addNewTicket" class="TestCases.QALegendAddTicketsTest"/>
+        <method signature="QALegendProjectsTest.addNewProjects()[pri:1, instance:TestCases.QALegendProjectsTest@ba2f4ec]" name="addNewProjects" class="TestCases.QALegendProjectsTest"/>
+        <method signature="QALegendAddTicketsTest.assigningTicket()[pri:2, instance:TestCases.QALegendAddTicketsTest@49438269]" name="assigningTicket" class="TestCases.QALegendAddTicketsTest"/>
+        <method signature="QALegendProjectsTest.editNewlyAddedProject()[pri:2, instance:TestCases.QALegendProjectsTest@ba2f4ec]" name="editNewlyAddedProject" class="TestCases.QALegendProjectsTest"/>
+        <method signature="QALegendUserMyProfileTest.approveLeave()[pri:2, instance:TestCases.QALegendUserMyProfileTest@1c1bbc4e]" name="approveLeave" class="TestCases.QALegendUserMyProfileTest"/>
+        <method signature="QALegendAddTicketsTest.markasClosedTicket()[pri:3, instance:TestCases.QALegendAddTicketsTest@49438269]" name="markasClosedTicket" class="TestCases.QALegendAddTicketsTest"/>
+        <method signature="QALegendProjectsTest.changeProjectStatusAndDeleteProject()[pri:3, instance:TestCases.QALegendProjectsTest@ba2f4ec]" name="changeProjectStatusAndDeleteProject" class="TestCases.QALegendProjectsTest"/>
+        <method signature="QALegendAddTicketsTest.postticketsMessage()[pri:4, instance:TestCases.QALegendAddTicketsTest@49438269]" name="postticketsMessage" class="TestCases.QALegendAddTicketsTest"/>
       </group> <!-- regression -->
       <group name="sanity">
-        <method signature="QALegendUserMyProfileTest.userMyProfileOption()[pri:1, instance:TestCases.QALegendUserMyProfileTest@3857f613]" name="userMyProfileOption" class="TestCases.QALegendUserMyProfileTest"/>
+        <method signature="QALegendAddMemberTest.addTeamMember()[pri:1, instance:TestCases.QALegendAddMemberTest@815b41f]" name="addTeamMember" class="TestCases.QALegendAddMemberTest"/>
+        <method signature="QALegendUserMyProfileTest.clickOnUserProfileAndApplyLeave()[pri:1, instance:TestCases.QALegendUserMyProfileTest@1c1bbc4e]" name="clickOnUserProfileAndApplyLeave" class="TestCases.QALegendUserMyProfileTest"/>
+        <method signature="QALegendAddTicketsTest.postticketsMessage()[pri:4, instance:TestCases.QALegendAddTicketsTest@49438269]" name="postticketsMessage" class="TestCases.QALegendAddTicketsTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-05-07T21:26:53 IST" name="Test" finished-at="2025-05-07T21:28:37 IST" duration-ms="104258">
-      <class name="TestCases.QALegendUserMyProfileTest">
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendUserMyProfileTest@3857f613]" started-at="2025-05-07T21:27:44 IST" name="initiliazation" finished-at="2025-05-07T21:28:16 IST" duration-ms="32400" status="PASS">
+    <test started-at="2025-05-08T13:52:25 IST" name="Test" finished-at="2025-05-08T13:54:26 IST" duration-ms="120564">
+      <class name="TestCases.QALegendAddTicketsTest">
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@49438269]" started-at="2025-05-08T13:52:39 IST" name="initiliazation" finished-at="2025-05-08T13:52:42 IST" duration-ms="2753" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,22 +34,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiliazation -->
-        <test-method signature="userMyProfileOption()[pri:1, instance:TestCases.QALegendUserMyProfileTest@3857f613]" started-at="2025-05-07T21:28:16 IST" name="userMyProfileOption" finished-at="2025-05-07T21:28:26 IST" duration-ms="10100" status="PASS">
+        <test-method signature="addNewTicket()[pri:1, instance:TestCases.QALegendAddTicketsTest@49438269]" started-at="2025-05-08T13:52:42 IST" name="addNewTicket" finished-at="2025-05-08T13:52:51 IST" duration-ms="9415" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userMyProfileOption -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendUserMyProfileTest@3857f613]" started-at="2025-05-07T21:28:26 IST" name="afterMethod" finished-at="2025-05-07T21:28:26 IST" duration-ms="256" status="PASS">
+        </test-method> <!-- addNewTicket -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendAddTicketsTest@49438269]" started-at="2025-05-08T13:52:51 IST" name="afterMethod" finished-at="2025-05-08T13:52:52 IST" duration-ms="297" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userMyProfileOption status=SUCCESS method=QALegendUserMyProfileTest.userMyProfileOption()[pri:1, instance:TestCases.QALegendUserMyProfileTest@3857f613] output={null}]]]>
+                <![CDATA[[TestResult name=addNewTicket status=SUCCESS method=QALegendAddTicketsTest.addNewTicket()[pri:1, instance:TestCases.QALegendAddTicketsTest@49438269] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendUserMyProfileTest@3857f613]" started-at="2025-05-07T21:28:26 IST" name="initiliazation" finished-at="2025-05-07T21:28:30 IST" duration-ms="3770" status="PASS">
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@49438269]" started-at="2025-05-08T13:52:52 IST" name="initiliazation" finished-at="2025-05-08T13:52:54 IST" duration-ms="2265" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,15 +60,121 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiliazation -->
-        <test-method signature="approveLeave()[pri:2, instance:TestCases.QALegendUserMyProfileTest@3857f613]" started-at="2025-05-07T21:28:30 IST" name="approveLeave" finished-at="2025-05-07T21:28:37 IST" duration-ms="6851" status="PASS">
+        <test-method signature="assigningTicket()[pri:2, instance:TestCases.QALegendAddTicketsTest@49438269]" started-at="2025-05-08T13:52:54 IST" name="assigningTicket" finished-at="2025-05-08T13:53:02 IST" duration-ms="7884" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- approveLeave -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendUserMyProfileTest@3857f613]" started-at="2025-05-07T21:28:37 IST" name="afterMethod" finished-at="2025-05-07T21:28:37 IST" duration-ms="236" status="PASS">
+        </test-method> <!-- assigningTicket -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendAddTicketsTest@49438269]" started-at="2025-05-08T13:53:02 IST" name="afterMethod" finished-at="2025-05-08T13:53:02 IST" duration-ms="256" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=approveLeave status=SUCCESS method=QALegendUserMyProfileTest.approveLeave()[pri:2, instance:TestCases.QALegendUserMyProfileTest@3857f613] output={null}]]]>
+                <![CDATA[[TestResult name=assigningTicket status=SUCCESS method=QALegendAddTicketsTest.assigningTicket()[pri:2, instance:TestCases.QALegendAddTicketsTest@49438269] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@49438269]" started-at="2025-05-08T13:53:02 IST" name="initiliazation" finished-at="2025-05-08T13:53:05 IST" duration-ms="2373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiliazation -->
+        <test-method signature="markasClosedTicket()[pri:3, instance:TestCases.QALegendAddTicketsTest@49438269]" started-at="2025-05-08T13:53:05 IST" name="markasClosedTicket" finished-at="2025-05-08T13:53:15 IST" duration-ms="10493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- markasClosedTicket -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendAddTicketsTest@49438269]" started-at="2025-05-08T13:53:15 IST" name="afterMethod" finished-at="2025-05-08T13:53:15 IST" duration-ms="254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=markasClosedTicket status=SUCCESS method=QALegendAddTicketsTest.markasClosedTicket()[pri:3, instance:TestCases.QALegendAddTicketsTest@49438269] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddTicketsTest@49438269]" started-at="2025-05-08T13:53:15 IST" name="initiliazation" finished-at="2025-05-08T13:53:18 IST" duration-ms="2255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiliazation -->
+        <test-method signature="postticketsMessage()[pri:4, instance:TestCases.QALegendAddTicketsTest@49438269]" started-at="2025-05-08T13:53:18 IST" name="postticketsMessage" finished-at="2025-05-08T13:53:29 IST" duration-ms="11752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postticketsMessage -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendAddTicketsTest@49438269]" started-at="2025-05-08T13:53:29 IST" name="afterMethod" finished-at="2025-05-08T13:53:30 IST" duration-ms="261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=postticketsMessage status=SUCCESS method=QALegendAddTicketsTest.postticketsMessage()[pri:4, instance:TestCases.QALegendAddTicketsTest@49438269] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TestCases.QALegendAddTicketsTest -->
+      <class name="TestCases.QALegendUserMyProfileTest">
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendUserMyProfileTest@1c1bbc4e]" started-at="2025-05-08T13:54:04 IST" name="initiliazation" finished-at="2025-05-08T13:54:06 IST" duration-ms="2277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiliazation -->
+        <test-method signature="clickOnUserProfileAndApplyLeave()[pri:1, instance:TestCases.QALegendUserMyProfileTest@1c1bbc4e]" started-at="2025-05-08T13:54:06 IST" name="clickOnUserProfileAndApplyLeave" finished-at="2025-05-08T13:54:14 IST" duration-ms="8095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnUserProfileAndApplyLeave -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendUserMyProfileTest@1c1bbc4e]" started-at="2025-05-08T13:54:14 IST" name="afterMethod" finished-at="2025-05-08T13:54:15 IST" duration-ms="268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOnUserProfileAndApplyLeave status=SUCCESS method=QALegendUserMyProfileTest.clickOnUserProfileAndApplyLeave()[pri:1, instance:TestCases.QALegendUserMyProfileTest@1c1bbc4e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendUserMyProfileTest@1c1bbc4e]" started-at="2025-05-08T13:54:15 IST" name="initiliazation" finished-at="2025-05-08T13:54:17 IST" duration-ms="2476" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiliazation -->
+        <test-method signature="approveLeave()[pri:2, instance:TestCases.QALegendUserMyProfileTest@1c1bbc4e]" started-at="2025-05-08T13:54:17 IST" name="approveLeave" finished-at="2025-05-08T13:54:26 IST" duration-ms="8595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approveLeave -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendUserMyProfileTest@1c1bbc4e]" started-at="2025-05-08T13:54:26 IST" name="afterMethod" finished-at="2025-05-08T13:54:26 IST" duration-ms="254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=approveLeave status=SUCCESS method=QALegendUserMyProfileTest.approveLeave()[pri:2, instance:TestCases.QALegendUserMyProfileTest@1c1bbc4e] output={null}]]]>
               </value>
             </param>
           </params>
@@ -69,8 +182,8 @@
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- TestCases.QALegendUserMyProfileTest -->
-      <class name="TestCases.QALegendProjectsTest">
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendProjectsTest@54d9d12d]" started-at="2025-05-07T21:26:53 IST" name="initiliazation" finished-at="2025-05-07T21:26:57 IST" duration-ms="3697" status="PASS">
+      <class name="TestCases.QALegendAddMemberTest">
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendAddMemberTest@815b41f]" started-at="2025-05-08T13:52:26 IST" name="initiliazation" finished-at="2025-05-08T13:52:29 IST" duration-ms="3162" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,22 +194,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiliazation -->
-        <test-method signature="addNewProjects()[pri:1, instance:TestCases.QALegendProjectsTest@54d9d12d]" started-at="2025-05-07T21:26:57 IST" name="addNewProjects" finished-at="2025-05-07T21:27:05 IST" duration-ms="7916" status="PASS">
+        <test-method signature="addTeamMember()[pri:1, instance:TestCases.QALegendAddMemberTest@815b41f]" started-at="2025-05-08T13:52:29 IST" name="addTeamMember" finished-at="2025-05-08T13:52:39 IST" duration-ms="10297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTeamMember -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendAddMemberTest@815b41f]" started-at="2025-05-08T13:52:39 IST" name="afterMethod" finished-at="2025-05-08T13:52:39 IST" duration-ms="252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addTeamMember status=SUCCESS method=QALegendAddMemberTest.addTeamMember()[pri:1, instance:TestCases.QALegendAddMemberTest@815b41f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TestCases.QALegendAddMemberTest -->
+      <class name="TestCases.QALegendProjectsTest">
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendProjectsTest@ba2f4ec]" started-at="2025-05-08T13:53:30 IST" name="initiliazation" finished-at="2025-05-08T13:53:32 IST" duration-ms="2227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiliazation -->
+        <test-method signature="addNewProjects()[pri:1, instance:TestCases.QALegendProjectsTest@ba2f4ec]" started-at="2025-05-08T13:53:32 IST" name="addNewProjects" finished-at="2025-05-08T13:53:39 IST" duration-ms="7044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewProjects -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendProjectsTest@54d9d12d]" started-at="2025-05-07T21:27:05 IST" name="afterMethod" finished-at="2025-05-07T21:27:05 IST" duration-ms="267" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendProjectsTest@ba2f4ec]" started-at="2025-05-08T13:53:39 IST" name="afterMethod" finished-at="2025-05-08T13:53:39 IST" duration-ms="271" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addNewProjects status=SUCCESS method=QALegendProjectsTest.addNewProjects()[pri:1, instance:TestCases.QALegendProjectsTest@54d9d12d] output={null}]]]>
+                <![CDATA[[TestResult name=addNewProjects status=SUCCESS method=QALegendProjectsTest.addNewProjects()[pri:1, instance:TestCases.QALegendProjectsTest@ba2f4ec] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendProjectsTest@54d9d12d]" started-at="2025-05-07T21:27:05 IST" name="initiliazation" finished-at="2025-05-07T21:27:08 IST" duration-ms="2790" status="PASS">
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendProjectsTest@ba2f4ec]" started-at="2025-05-08T13:53:39 IST" name="initiliazation" finished-at="2025-05-08T13:53:41 IST" duration-ms="2342" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,22 +248,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiliazation -->
-        <test-method signature="addNewProjectsEdit()[pri:2, instance:TestCases.QALegendProjectsTest@54d9d12d]" started-at="2025-05-07T21:27:08 IST" name="addNewProjectsEdit" finished-at="2025-05-07T21:27:17 IST" duration-ms="9347" status="PASS">
+        <test-method signature="editNewlyAddedProject()[pri:2, instance:TestCases.QALegendProjectsTest@ba2f4ec]" started-at="2025-05-08T13:53:41 IST" name="editNewlyAddedProject" finished-at="2025-05-08T13:53:52 IST" duration-ms="10963" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNewProjectsEdit -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendProjectsTest@54d9d12d]" started-at="2025-05-07T21:27:17 IST" name="afterMethod" finished-at="2025-05-07T21:27:19 IST" duration-ms="1786" status="PASS">
+        </test-method> <!-- editNewlyAddedProject -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendProjectsTest@ba2f4ec]" started-at="2025-05-08T13:53:52 IST" name="afterMethod" finished-at="2025-05-08T13:53:53 IST" duration-ms="270" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addNewProjectsEdit status=SUCCESS method=QALegendProjectsTest.addNewProjectsEdit()[pri:2, instance:TestCases.QALegendProjectsTest@54d9d12d] output={null}]]]>
+                <![CDATA[[TestResult name=editNewlyAddedProject status=SUCCESS method=QALegendProjectsTest.editNewlyAddedProject()[pri:2, instance:TestCases.QALegendProjectsTest@ba2f4ec] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendProjectsTest@54d9d12d]" started-at="2025-05-07T21:27:19 IST" name="initiliazation" finished-at="2025-05-07T21:27:21 IST" duration-ms="2505" status="PASS">
+        <test-method is-config="true" signature="initiliazation(java.lang.String)[pri:0, instance:TestCases.QALegendProjectsTest@ba2f4ec]" started-at="2025-05-08T13:53:53 IST" name="initiliazation" finished-at="2025-05-08T13:53:55 IST" duration-ms="2232" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,15 +274,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiliazation -->
-        <test-method signature="projectStatusChangeandDelete()[pri:3, instance:TestCases.QALegendProjectsTest@54d9d12d]" started-at="2025-05-07T21:27:21 IST" name="projectStatusChangeandDelete" finished-at="2025-05-07T21:27:43 IST" duration-ms="22004" status="PASS">
+        <test-method signature="changeProjectStatusAndDeleteProject()[pri:3, instance:TestCases.QALegendProjectsTest@ba2f4ec]" started-at="2025-05-08T13:53:55 IST" name="changeProjectStatusAndDeleteProject" finished-at="2025-05-08T13:54:04 IST" duration-ms="8926" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- projectStatusChangeandDelete -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendProjectsTest@54d9d12d]" started-at="2025-05-07T21:27:43 IST" name="afterMethod" finished-at="2025-05-07T21:27:44 IST" duration-ms="223" status="PASS">
+        </test-method> <!-- changeProjectStatusAndDeleteProject -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestCases.QALegendProjectsTest@ba2f4ec]" started-at="2025-05-08T13:54:04 IST" name="afterMethod" finished-at="2025-05-08T13:54:04 IST" duration-ms="246" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=projectStatusChangeandDelete status=SUCCESS method=QALegendProjectsTest.projectStatusChangeandDelete()[pri:3, instance:TestCases.QALegendProjectsTest@54d9d12d] output={null}]]]>
+                <![CDATA[[TestResult name=changeProjectStatusAndDeleteProject status=SUCCESS method=QALegendProjectsTest.changeProjectStatusAndDeleteProject()[pri:3, instance:TestCases.QALegendProjectsTest@ba2f4ec] output={null}]]]>
               </value>
             </param>
           </params>

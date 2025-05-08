@@ -4,11 +4,36 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browsername" value="chrome"/>
     <classes>
+      <class name="TestCases.QALegendAddTicketsTest">
+        <methods>
+          <include name="addNewTicket"/>
+          <include name="initiliazation"/>
+          <include name="afterMethod"/>
+          <include name="postticketsMessage"/>
+          <include name="markasClosedTicket"/>
+          <include name="assigningTicket"/>
+        </methods>
+      </class> <!-- TestCases.QALegendAddTicketsTest -->
+      <class name="TestCases.QALegendUserMyProfileTest">
+        <methods>
+          <include name="approveLeave"/>
+          <include name="initiliazation"/>
+          <include name="afterMethod"/>
+          <include name="clickOnUserProfileAndApplyLeave"/>
+        </methods>
+      </class> <!-- TestCases.QALegendUserMyProfileTest -->
+      <class name="TestCases.QALegendAddMemberTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="addTeamMember"/>
+          <include name="initiliazation"/>
+        </methods>
+      </class> <!-- TestCases.QALegendAddMemberTest -->
       <class name="TestCases.QALegendProjectsTest">
         <methods>
           <include name="initiliazation"/>
+          <include name="addNewProjects"/>
           <include name="afterMethod"/>
-          <include name="projectStatusChangeandDelete"/>
         </methods>
       </class> <!-- TestCases.QALegendProjectsTest -->
     </classes>

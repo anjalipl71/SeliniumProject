@@ -53,7 +53,7 @@ public class QALegendAddTicketsTest extends BaseClass{
 		addTicketspage.createNewTickets(title, tickectprop.getProperty("description"));
 		addTicketspage.waitForInvisibilityOfTicketModal();
 		addTicketspage.ticketsSearch(title);
-		waitUtility.waitForClickingonAnElement(driver, addTicketspage.ticketsDeletearrowicon);
+		waitUtility.waitForClickingonAnElement(driver, addTicketspage.ticketsDeleteicon);
 		addTicketspage.ticketsDeleting();//findMessageSentorNot
 		waitUtility.waitForVisibilityOfElement(driver, addTicketspage.confirmDeleteMessage);
 		Assert.assertTrue(addTicketspage.confirmDeleteTextMessage());
@@ -96,7 +96,7 @@ public class QALegendAddTicketsTest extends BaseClass{
 	}
 	
 	@Test(priority = 4,groups= {"regression","sanity"},retryAnalyzer = RetryAnalyser.class)
-	public void ticketsMessagePost() throws InterruptedException {
+	public void postticketsMessage() throws InterruptedException {
 		loginPage.loginToQaLegentPage(tickectprop.getProperty("username"), tickectprop.getProperty("password"));
 		homePage.clickonTicketsMenu();
 		waitUtility.waitForClickingonAnElement(driver, addTicketspage.clickonNewTicketsButton);

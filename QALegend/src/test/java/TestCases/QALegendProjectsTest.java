@@ -45,7 +45,7 @@ public class QALegendProjectsTest extends BaseClass {
 	public void addNewProjects() throws InterruptedException {
 	   loginPage.loginToQaLegentPage(projectProp.getProperty("username"), projectProp.getProperty("password"));
 	   homePage.clickOnProjectOption();
-	   homePage.allProjectOptionClick();
+	   homePage.ClickallProjectOption();
 	   addProject.addProjectButtonClick();
 	   String baseTitle = projectProp.getProperty("title");
 	   String title=baseTitle+FakerUtility.randomnumberGenerator();
@@ -58,10 +58,10 @@ public class QALegendProjectsTest extends BaseClass {
 	}
 	
 	@Test(priority = 2,groups= {"regression"},retryAnalyzer = RetryAnalyser.class)
-	public void addNewProjectsEdit() throws InterruptedException {
+	public void editNewlyAddedProject() throws InterruptedException {
 		   loginPage.loginToQaLegentPage(projectProp.getProperty("username"), projectProp.getProperty("password"));
 		   homePage.clickOnProjectOption();
-		   homePage.allProjectOptionClick();
+		   homePage.ClickallProjectOption();
 		   addProject.addProjectButtonClick();
 		   String baseTitle = projectProp.getProperty("title");
 		   String title=baseTitle+FakerUtility.randomnumberGenerator();
@@ -80,13 +80,12 @@ public class QALegendProjectsTest extends BaseClass {
 	}
 	
 	@Test(priority = 3,groups= {"regression"},retryAnalyzer = RetryAnalyser.class)
-	public void projectStatusChangeandDelete() throws InterruptedException {
+	public void changeProjectStatusAndDeleteProject() throws InterruptedException {
 		   loginPage.loginToQaLegentPage(projectProp.getProperty("username"), projectProp.getProperty("password"));
 		   homePage.clickOnProjectOption();
-		   homePage.allProjectOptionClick();
+		   homePage.ClickallProjectOption();
 		   waitUtility.waitForVisibilityOfElement(driver, addProject.QALegendProjectPageEditButton);
 		   addProject.statusCompleteProjectsDelete();
-		   //addProject.waitForInvisibilityOfProjectModal();
 		   waitUtility.waitForVisibilityOfElement(driver, addProject.selectStatusComplete);
 		   addProject.deleteCompletedProject();
 		   waitUtility.waitForClickingonAnElement(driver, addProject.checkDeleteMessage);

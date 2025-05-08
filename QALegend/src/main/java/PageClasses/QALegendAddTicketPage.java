@@ -25,7 +25,7 @@ public class QALegendAddTicketPage {
 	  @FindBy(xpath = "//input[@type='search']")
 	  public WebElement ticketsSearchField;
 	  @FindBy(xpath =("//button[@class='btn btn-default dropdown-toggle  mt0 mb0'][1]"))
-	  public WebElement ticketsDeletearrowicon;
+	  public WebElement ticketsDeleteicon;
 	  @FindBy(xpath = "//a[@title='Delete'][1]")
 	  WebElement clickonDelete;
 	  @FindBy(xpath = "//button[@id='confirmDeleteButton']")
@@ -80,9 +80,9 @@ public class QALegendAddTicketPage {
 
 	  
 	  public QALegendAddTicketPage ticketsDeleting() throws InterruptedException {
-		  PageUtilities.clickonanelement(ticketsDeletearrowicon);
+		  PageUtilities.clickonanelement(ticketsDeleteicon);
 		  PageUtilities.clickonanelement(clickonDelete);
-		  Thread.sleep(1000);
+		  waitUtility.waitForClickingonAnElement(driver, confirmDeleteButton);
 		  PageUtilities.clickonanelement(confirmDeleteButton);
 		  return this;
 	  }

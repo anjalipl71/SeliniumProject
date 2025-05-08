@@ -16,11 +16,11 @@ public class QALegendHomePage {
 	@FindBy(xpath = "//a[@href='https://qalegend.com/crm/index.php/projects']")
 	WebElement clickOnProjects;
 	@FindBy(xpath = "//span[text()='All Projects']")
-	WebElement allProjectsclick;
+	WebElement clickonallProjectsOption;
 	@FindBy(xpath = "//span[@class='topbar-user-name']")
-	public WebElement userMyProfileClick;
+	public WebElement clickonUserProfileName;
 	@FindBy(xpath = "//a[@href='https://qalegend.com/crm/index.php/team_members/view/1/general']")
-	WebElement clickonMyProfile;
+	public WebElement clickonMyProfile;
 	
 	
 	public QALegendHomePage(WebDriver driver) {
@@ -46,13 +46,13 @@ public class QALegendHomePage {
 		return this;
 	}
 	
-	public QALegendHomePage allProjectOptionClick() {
-		PageUtilities.clickonanelement(allProjectsclick);
+	public QALegendHomePage ClickallProjectOption() {
+		PageUtilities.clickonanelement(clickonallProjectsOption);
 		return this;
 	}
 	
-	public QALegendHomePage usermyProfileClick() {
-		PageUtilities.clickonanelement(userMyProfileClick);
+	public QALegendHomePage ClickonUsermyProfileName() {
+		PageUtilities.clickonanelement(clickonUserProfileName);
 		return this;
 	}
 	

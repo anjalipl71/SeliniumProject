@@ -44,38 +44,38 @@ public class QALegendUserMyProfileTest extends BaseClass {
 	}
 	
     @Test(priority = 1,groups= {"sanity"},retryAnalyzer = RetryAnalyser.class)
-	public void userMyProfileOption() throws InterruptedException, IOException {
+	public void clickOnUserProfileAndApplyLeave() throws InterruptedException, IOException {
     	
 		loginpage.loginToQaLegentPage(propProfile.getProperty("username"), propProfile.getProperty("password")); 
-		waitUtility.waitForClickingonAnElement(driver, homePage.userMyProfileClick); // example
-		homePage.usermyProfileClick();
-		waitUtility.waitForClickingonAnElement(driver, homePage.userMyProfileClick);
+		waitUtility.waitForClickingonAnElement(driver, homePage.clickonUserProfileName); // example
+		homePage.ClickonUsermyProfileName();
+		waitUtility.waitForClickingonAnElement(driver, homePage.clickonMyProfile);
 		homePage.myProfileClick();
 		myProfilePage.clickOnLeaveOption();
-		waitUtility.waitForClickingonAnElement(driver, myProfilePage.userApplyLeave);
+		waitUtility.waitForClickingonAnElement(driver, myProfilePage.clickOnApplyLeave);
 		myProfilePage.clickOnApplyLeave();
 		waitUtility.waitForClickingonAnElement(driver, myProfilePage.leaveTypeField);
 		myProfilePage.createLeave(propProfile.getProperty("reason"));
 		myProfilePage.waitForInvisibilityOfMyProfileModal();
 		myProfilePage.clickOnLeaveOption();
-		waitUtility.waitForClickingonAnElement(driver, myProfilePage.statusSortClick);
-		myProfilePage.checkleaveapplied();
-		waitUtility.waitForClickingonAnElement(driver, myProfilePage.reasonTextFind);
-		Assert.assertTrue(myProfilePage.checklreason());
+		waitUtility.waitForClickingonAnElement(driver, myProfilePage.clickOnstatusforSort);
+		myProfilePage.checkAppliedLeave();
+		waitUtility.waitForClickingonAnElement(driver, myProfilePage.findReason);
+		Assert.assertTrue(myProfilePage.checkreason());
     }
     
     @Test(priority = 2,groups= {"regression"},retryAnalyzer = RetryAnalyser.class)
 	public void approveLeave() throws InterruptedException {
 		loginpage.loginToQaLegentPage(propProfile.getProperty("username"), propProfile.getProperty("password"));
-		homePage.usermyProfileClick();
-		waitUtility.waitForClickingonAnElement(driver, homePage.userMyProfileClick);
+		homePage.ClickonUsermyProfileName();
+		waitUtility.waitForClickingonAnElement(driver, homePage.clickonMyProfile);
 		homePage.myProfileClick();
 		myProfilePage.clickOnLeaveOption();
 		waitUtility.waitForClickingonAnElement(driver, myProfilePage.searchfield);
 		myProfilePage.approveAppliedLeave(propProfile.getProperty("searchvalue"));
 		myProfilePage.waitForInvisibilityOfMyProfileModal();
 		myProfilePage.clickOnLeaveOption();
-		waitUtility.waitForClickingonAnElement(driver, myProfilePage.statusSortClick);
+		waitUtility.waitForClickingonAnElement(driver, myProfilePage.clickOnstatusforSort);
 		Assert.assertTrue(myProfilePage.checkApprovedStatus());
 	}
 }
